@@ -12,7 +12,7 @@ export function RoundTwo() {
                     return (
                         data.prompts.map(question => {
                             return (
-                                question['label-spanish'].length > 0 ? <Slider prompt={question['label-spanish']} translation={question['label-english']} lowerBound={data['lower-bound']} higherBound={data['higher-bound']} /> : <></>
+                                question['label-spanish'].length > 0 ? <Slider key={question['label-spanish']} prompt={question['label-spanish']} translation={question['label-english']} lowerBound={data['lower-bound']} higherBound={data['higher-bound']} /> : <></>
                             )
                         })
                     )
