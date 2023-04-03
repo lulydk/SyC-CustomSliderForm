@@ -5,45 +5,38 @@
   height: 100vh;
 }
 
-.navbar-brand {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-}
-
-.navbar .container-fluid {
-  padding: 10px 25px;
-}
-
-.navbar a {
-  color: var(--primary);
-  font-weight: 600;
-  font-size: 25px;
-}
-
-.navbar a:hover, .navbar .btn:hover {
-  color: var(--primary-dark);
-}
-
-.navbar .btn {
-  color: var(--primary);
+.container-fluid {
+  padding: 20px 150px;
 }
 
 .wrapper {
-  padding: 25px 150px;
+  padding: 0px 150px 50px 150px;
   display: flex;
   flex-direction: column;
 }
 
-.translate {
-  color: var(--primary);
-  font-style: italic;
+.buttonWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3em;
+  width: 100%;
 }
 
-/* .card {
-  width: 50%;
-  border: white;
-  border-radius: 30px;
-  box-shadow: 0 4px 8px 0 rgba(109, 93, 252, 0.1), 0 6px 20px 0 rgba(109, 93, 252, 0.15);
-} */
+.btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  margin-left: 10px;
+}
+
+.btn-send {
+  color: var(--white) !important;
+  background-color: var(--black) !important;
+  border-color: var(--black) !important;
+  margin-left: 10px;
+}
+
+.btn-primary:hover, .btn-send:hover {
+  /* background-color: var(--primary-dark) !important; */
+  box-shadow: var(--shadow);
+}

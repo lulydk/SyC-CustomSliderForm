@@ -1,44 +1,26 @@
-import { useState } from 'react'
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import { QuestionsRoundOne } from './QuestionsRoundOne';
-import { QuestionsRoundTwo } from './QuestionsRoundTwo';
-import { useMultistepForm } from './useMultistepForm';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+import { RoundOne } from './pages/roundOne/RoundOne';
+import { RoundTwo } from './pages/roundTwo/RoundTwo';
+import { RoundThree } from './pages/roundThree/RoundThree';
+import { useMultistepForm } from './hooks/useMultistepForm';
+import { Navbar } from './components/ui/navbar/Navbar';
 
 function App() {
-  const {
-    steps,
-    currentStepIdx,
-    step,
-    isFirstStep,
-    isLastStep,
-    next,
-    back
-  } = useMultistepForm([
-    <QuestionsRoundOne/>,
-    <QuestionsRoundTwo/>,
-    <div>Three</div>
-  ])
+
+  const { steps, currentStepIdx, step, isFirstStep, isLastStep, next, back } = useMultistepForm([ <RoundOne/>, <RoundTwo/>, <RoundThree/> ])
 
   return (
     <div className="App">
-      {/* <nav className="navbar sticky-top">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            <img src="icon.png" alt="Logo" height="30"/>
-            Sueño y Consciencia
-          </a>
-          <button className='btn'>Acerca de</button>
-        </div>
-      </nav> */}
-      <div className='wrapper mt-5'>
-        <p>{currentStepIdx + 1} / {steps.length}</p>
+      <Navbar/>
+      <div className='wrapper'>
+        {/* <p>{currentStepIdx + 1} / {steps.length}</p> */}
         {step}
-        <div className='d-flex mt-5 gap-2 justify-content-end'>
+        <div className='buttonWrapper'>
           { !isFirstStep && <button className='btn btn-primary' onClick={back}>Anterior</button> }
-          <button className='btn btn-primary' onClick={next}>
-            { isLastStep ? "Finalizar":"Siguiente" }
-          </button>
+          { !isLastStep && <button className='btn btn-primary' onClick={next}>Siguiente</button> }
+          { isLastStep && <button className='btn btn-send' onClick={next}>Finalizar</button> }
         </div>
       </div>
     </div>

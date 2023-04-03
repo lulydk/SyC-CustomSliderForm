@@ -1,0 +1,9 @@
+.prompt {
+    font-weight: 600;
+}
+
+.translate {
+    color: var(--primary);
+    font-weight: 500;
+    font-style: italic;
+}

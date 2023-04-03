@@ -1,0 +1,8 @@
+.title {
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.form-range::-webkit-slider-thumb {
+    background-color: var(--primary);
+}

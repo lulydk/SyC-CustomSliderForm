@@ -1,0 +1,134 @@
+[
+    {
+        "__type": "choices",
+        "choice-0": "No, para nada",
+        "choice-1": "Tan leve que no puedo decidir",
+        "choice-2": "Leve",
+        "choice-3": "Moderado",
+        "choice-4": "Fuerte",
+        "choice-5": "Extremo, más que en cualquier otro momento de mi vida",
+
+        "prompts": [
+            {
+                "label-spanish": "1. Libertad de las limitaciones de su yo personal y sensación de unidad o vínculo con algo que se sentía más grande que usted mismo.",
+                "label-english": "Freedom from the limitations of your personal self and feeling a unity or bond with what was felt to be greater than your personal self."
+            },
+            {
+                "label-spanish": "2. Experiencia del ser puro y la conciencia pura (más allá del mundo de las impresiones sensoriales).",
+                "label-english": "Experience of pure being and pure awareness (beyond the world of sense impressions)."
+            },
+            {
+                "label-spanish": "3. Experiencia de unidad con un 'mundo interior'.",
+                "label-english": "Experience of oneness in relation to an “inner world” within."
+            },
+            {
+                "label-spanish": "4. Experiencia de la fusión de su yo personal con un todo más grande.",
+                "label-english": "Experience of the fusion of your personal self into a larger whole."
+            },
+            {
+                "label-spanish": "5. Experiencia de unidad con la realidad última.",
+                "label-english": "Experience of unity with ultimate reality."
+            },
+            {
+                "label-spanish": "6. Sentir que experimentó la eternidad o el infinito.",
+                "label-english": "Feeling that you experienced eternity or infinity."
+            },
+            {
+                "label-spanish": "7. Experiencia de unión con objetos y/o personas percibidas en su entorno.",
+                "label-english": "Experience of oneness or unity with objects and/or persons perceived in your surroundings."
+            },
+            {
+                "label-spanish": "8. Experimentar la certeza de que 'Todo es Uno'.",
+                "label-english": "Experience of the insight that 'all is One'."
+            },
+            {
+                "label-spanish": "9. Consciencia de la presencia de vida en todas las cosas.",
+                "label-english": "Awareness of the life or living presence in all things."
+            },
+            {
+                "label-spanish": "10. Adquisición de conocimiento experimentado a un nivel intuitivo.",
+                "label-english": "Gain of insightful knowledge experienced at an intuitive level."
+            },
+            {
+                "label-spanish": "11. Certeza de haber encontrado una realidad última (en el sentido de ser capaz de 'conocer' y 'ver' qué es realmente real durante tu experiencia).",
+                "label-english": "Certainty of encounter with ultimate reality (in the sense of being able to 'know' and 'see' what is really real at some point during your experience."
+            },
+            {
+                "label-spanish": "12. Estás convencido ahora, si mirás hacia atrás en tu experiencia, que encontraste la realidad última (esto es, que vos 'supiste' y 'viste' qué es realmente real).",
+                "label-english": "You are convinced now, as you look back on your experience, that in it you encountered ultimate reality (i.e., that you 'knew' and 'saw' what was really real)."
+            },
+            {
+                "label-spanish": "13. Sensación de haber alcanzado un hito en un nivel espiritual.",
+                "label-english": "Sense of being at a spiritual height."
+            },
+            {
+                "label-spanish": "14. Sensación de reverencia.",
+                "label-english": "Sense of reverence."
+            },
+            {
+                "label-spanish": "15. Sentir que experimentaste algo profundamente sagrado y santo.",
+                "label-english": "Feeling that you experienced something profoundly sacred and holy."
+            },
+            {
+                "label-spanish": "16. Experimentar asombro.",
+                "label-english": "Experience of amazement."
+            },
+            {
+                "label-spanish": "17. Experimentar sensibilidad y gentileza.",
+                "label-english": "Feelings of tenderness and gentleness."
+            },
+            {
+                "label-spanish": "18. Sensación de paz y tranquilidad.",
+                "label-english": "Feelings of peace and tranquility."
+            },
+            {
+                "label-spanish": "19. Experiencia de éxtasis.",
+                "label-english": "Experience of ecstasy."
+            },
+            {
+                "label-spanish": "20. Sentido de asombro o genialidad.",
+                "label-english": "Sense of awe or awesomeness."
+            },
+            {
+                "label-spanish": "21. Sentimientos de alegría.",
+                "label-english": "Feelings of joy."
+            },
+            {
+                "label-spanish": "22. Pérdida de tu sentido usual del tiempo.",
+                "label-english": "Loss of your usual sense of time."
+            },
+            {
+                "label-spanish": "23. Pérdida de tu sentido usual del espacio.",
+                "label-english": "Loss of your usual sense of space."
+            },
+            {
+                "label-spanish": "24. Pérdida de la conciencia habitual de dónde estabas",
+                "label-english": "Loss of usual awareness of where you were."
+            },
+            {
+                "label-spanish": "25. Sentido de estar 'fuera del' tiempo, más allá del pasado y el futuro",
+                "label-english": "Sense of being 'outside of' time, beyond past and future."
+            },
+            {
+                "label-spanish": "26. Estar en un reino sin límites de espacio.",
+                "label-english": "Being in a realm with no space boundaries."
+            },
+            {
+                "label-spanish": "27. Experiencia de atemporalidad.",
+                "label-english": "Experience of timelessness."
+            },
+            {
+                "label-spanish": "28. Sensación de que esa experiencia no se puede describir adecuadamente con palabras",
+                "label-english": "Sense that the experience cannot be described adequately in words."
+            },
+            {
+                "label-spanish": "29. Sentir que no podría hacer justicia a su experiencia describiéndola con palabras.",
+                "label-english": "Feeling that you could not do justice to your experience by describing it in words."
+            },
+            {
+                "label-spanish": "30. Sentir que sería difícil comunicar su propia experiencia a otras personas que no han tenido experiencias similares.",
+                "label-english": "Feeling that it would be difficult to communicate your own experience to others who have not had similar experiences."
+            }
+        ]
+    }
+]

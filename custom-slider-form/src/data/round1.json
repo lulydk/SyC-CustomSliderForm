@@ -1,0 +1,250 @@
+[
+    {
+        "__type": "slider",
+        "lower-bound": "No, no más de lo usual",
+        "higher-bound": "Sí, mucho más de lo usual",
+
+        "prompts": [
+            {
+                "label-spanish": "1. Sentí que estaba en otro mundo maravilloso.",
+                "label-english": "I felt that I was in a wonderful other world."
+            },
+            {
+                "label-spanish": "2. Mis pensamientos y acciones se ralentizaron.",
+                "label-english": "My thoughts and actions were slowed down."
+            },
+            {
+                "label-spanish": "3. Las sensaciones corporales eran muy agradables.",
+                "label-english": "Bodily sensations were very enjoyable."
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            },
+            {
+                "label-spanish": "",
+                "label-english": ""
+            }
+        ]
+    }
+]
