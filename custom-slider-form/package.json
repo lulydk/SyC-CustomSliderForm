@@ -1,15 +1,16 @@
 {
-  "homepage": "https://lulydk.github.io/SyC-CustomSliderForm/",
   "name": "custom-slider-form",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "repository": {
+    "url": "git+https://lulydk.github.io/SyC-CustomSliderForm/"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
