@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { auth } from "../../config/FirebaseConfig";
-import { createUserWithEmailAndPassword } from 'firebase/auth'
+// import { useAuth } from "../../config/FirebaseConfig";
+// import { createUserWithEmailAndPassword } from 'firebase/auth'
 
 export function Auth() {
 
@@ -8,7 +8,7 @@ export function Auth() {
     const [password, setPassword] = useState("")
 
     const signIn = async () => {
-        await createUserWithEmailAndPassword(auth, email, password)
+        // await createUserWithEmailAndPassword(useAuth(), email, password)
     }
 
     return (

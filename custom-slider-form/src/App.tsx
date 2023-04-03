@@ -16,14 +16,14 @@ function App() {
     <div className="App">
       <Navbar/>
       <div className='wrapper'>
-        <Auth/>
-        {/* <p>{currentStepIdx + 1} / {steps.length}</p>
+        {/* <Auth/> */}
+        <p>{currentStepIdx + 1} / {steps.length}</p>
         {step}
         <div className='buttonWrapper'>
           { !isFirstStep && <button className='btn btn-primary' onClick={back}>Anterior</button> }
           { !isLastStep && <button className='btn btn-primary' onClick={next}>Siguiente</button> }
           { isLastStep && <button className='btn btn-send' onClick={next}>Finalizar</button> }
-        </div> */}
+        </div>
       </div>
     </div>
   )
