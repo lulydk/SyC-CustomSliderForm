@@ -10,122 +10,152 @@
 
         "prompts": [
             {
+                "id": "meq-1",
                 "label-spanish": "1. Libertad de las limitaciones de su yo personal y sensación de unidad o vínculo con algo que se sentía más grande que usted mismo.",
                 "label-english": "Freedom from the limitations of your personal self and feeling a unity or bond with what was felt to be greater than your personal self."
             },
             {
+                "id": "meq-2",
                 "label-spanish": "2. Experiencia del ser puro y la conciencia pura (más allá del mundo de las impresiones sensoriales).",
                 "label-english": "Experience of pure being and pure awareness (beyond the world of sense impressions)."
             },
             {
+                "id": "meq-3",
                 "label-spanish": "3. Experiencia de unidad con un 'mundo interior'.",
                 "label-english": "Experience of oneness in relation to an “inner world” within."
             },
             {
+                "id": "meq-4",
                 "label-spanish": "4. Experiencia de la fusión de su yo personal con un todo más grande.",
                 "label-english": "Experience of the fusion of your personal self into a larger whole."
             },
             {
+                "id": "meq-5",
                 "label-spanish": "5. Experiencia de unidad con la realidad última.",
                 "label-english": "Experience of unity with ultimate reality."
             },
             {
+                "id": "meq-6",
                 "label-spanish": "6. Sentir que experimentó la eternidad o el infinito.",
                 "label-english": "Feeling that you experienced eternity or infinity."
             },
             {
+                "id": "meq-7",
                 "label-spanish": "7. Experiencia de unión con objetos y/o personas percibidas en su entorno.",
                 "label-english": "Experience of oneness or unity with objects and/or persons perceived in your surroundings."
             },
             {
+                "id": "meq-8",
                 "label-spanish": "8. Experimentar la certeza de que 'Todo es Uno'.",
                 "label-english": "Experience of the insight that 'all is One'."
             },
             {
+                "id": "meq-9",
                 "label-spanish": "9. Consciencia de la presencia de vida en todas las cosas.",
                 "label-english": "Awareness of the life or living presence in all things."
             },
             {
+                "id": "meq-10",
                 "label-spanish": "10. Adquisición de conocimiento experimentado a un nivel intuitivo.",
                 "label-english": "Gain of insightful knowledge experienced at an intuitive level."
             },
             {
+                "id": "meq-11",
                 "label-spanish": "11. Certeza de haber encontrado una realidad última (en el sentido de ser capaz de 'conocer' y 'ver' qué es realmente real durante tu experiencia).",
                 "label-english": "Certainty of encounter with ultimate reality (in the sense of being able to 'know' and 'see' what is really real at some point during your experience."
             },
             {
+                "id": "meq-12",
                 "label-spanish": "12. Estás convencido ahora, si mirás hacia atrás en tu experiencia, que encontraste la realidad última (esto es, que vos 'supiste' y 'viste' qué es realmente real).",
                 "label-english": "You are convinced now, as you look back on your experience, that in it you encountered ultimate reality (i.e., that you 'knew' and 'saw' what was really real)."
             },
             {
+                "id": "meq-13",
                 "label-spanish": "13. Sensación de haber alcanzado un hito en un nivel espiritual.",
                 "label-english": "Sense of being at a spiritual height."
             },
             {
+                "id": "meq-14",
                 "label-spanish": "14. Sensación de reverencia.",
                 "label-english": "Sense of reverence."
             },
             {
+                "id": "meq-15",
                 "label-spanish": "15. Sentir que experimentaste algo profundamente sagrado y santo.",
                 "label-english": "Feeling that you experienced something profoundly sacred and holy."
             },
             {
+                "id": "meq-16",
                 "label-spanish": "16. Experimentar asombro.",
                 "label-english": "Experience of amazement."
             },
             {
+                "id": "meq-17",
                 "label-spanish": "17. Experimentar sensibilidad y gentileza.",
                 "label-english": "Feelings of tenderness and gentleness."
             },
             {
+                "id": "meq-18",
                 "label-spanish": "18. Sensación de paz y tranquilidad.",
                 "label-english": "Feelings of peace and tranquility."
             },
             {
+                "id": "meq-19",
                 "label-spanish": "19. Experiencia de éxtasis.",
                 "label-english": "Experience of ecstasy."
             },
             {
+                "id": "meq-20",
                 "label-spanish": "20. Sentido de asombro o genialidad.",
                 "label-english": "Sense of awe or awesomeness."
             },
             {
+                "id": "meq-21",
                 "label-spanish": "21. Sentimientos de alegría.",
                 "label-english": "Feelings of joy."
             },
             {
+                "id": "meq-22",
                 "label-spanish": "22. Pérdida de tu sentido usual del tiempo.",
                 "label-english": "Loss of your usual sense of time."
             },
             {
+                "id": "meq-23",
                 "label-spanish": "23. Pérdida de tu sentido usual del espacio.",
                 "label-english": "Loss of your usual sense of space."
             },
             {
+                "id": "meq-24",
                 "label-spanish": "24. Pérdida de la conciencia habitual de dónde estabas",
                 "label-english": "Loss of usual awareness of where you were."
             },
             {
+                "id": "meq-25",
                 "label-spanish": "25. Sentido de estar 'fuera del' tiempo, más allá del pasado y el futuro",
                 "label-english": "Sense of being 'outside of' time, beyond past and future."
             },
             {
+                "id": "meq-26",
                 "label-spanish": "26. Estar en un reino sin límites de espacio.",
                 "label-english": "Being in a realm with no space boundaries."
             },
             {
+                "id": "meq-27",
                 "label-spanish": "27. Experiencia de atemporalidad.",
                 "label-english": "Experience of timelessness."
             },
             {
+                "id": "meq-28",
                 "label-spanish": "28. Sensación de que esa experiencia no se puede describir adecuadamente con palabras",
                 "label-english": "Sense that the experience cannot be described adequately in words."
             },
             {
+                "id": "meq-29",
                 "label-spanish": "29. Sentir que no podría hacer justicia a su experiencia describiéndola con palabras.",
                 "label-english": "Feeling that you could not do justice to your experience by describing it in words."
             },
             {
+                "id": "meq-30",
                 "label-spanish": "30. Sentir que sería difícil comunicar su propia experiencia a otras personas que no han tenido experiencias similares.",
                 "label-english": "Feeling that it would be difficult to communicate your own experience to others who have not had similar experiences."
             }

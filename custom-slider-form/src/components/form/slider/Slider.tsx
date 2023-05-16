@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Slider.css'
 
-export function Slider({ prompt, translation, lowerBound, higherBound } : { prompt: string; translation: string; lowerBound: string; higherBound: string }) {
+export function Slider({ id, prompt, translation, lowerBound, higherBound } : { id: string; prompt: string; translation: string; lowerBound: string; higherBound: string }) {
 
     const [sliderVal, setSliderVal] = useState(50)
 
@@ -20,7 +20,7 @@ export function Slider({ prompt, translation, lowerBound, higherBound } : { prom
                     <small>{ lowerBound }</small>
                 </div>
                 <div className="col">
-                    <input type="range" className="form-range" id="customRange1" value={sliderVal} min={0} max={100} onChange={e => onChangeValue(e)} data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title={sliderVal} />
+                    <input type="range" className="form-range" id={id} value={sliderVal} min={0} max={100} onChange={e => onChangeValue(e)} data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title={sliderVal} />
                 </div>
                 <div className="col col-1 text-center">
                     <small>{ higherBound }</small>

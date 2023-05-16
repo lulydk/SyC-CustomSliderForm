@@ -6,242 +6,302 @@
 
         "prompts": [
             {
+                "id": "5dasc-1",
                 "label-spanish": "1. Sentí que estaba en otro mundo maravilloso.",
                 "label-english": "I felt that I was in a wonderful other world."
             },
             {
+                "id": "5dasc-2",
                 "label-spanish": "2. Mis pensamientos y acciones se ralentizaron.",
                 "label-english": "My thoughts and actions were slowed down."
             },
             {
+                "id": "5dasc-3",
                 "label-spanish": "3. Las sensaciones corporales eran muy agradables.",
                 "label-english": "Bodily sensations were very enjoyable."
             },
             {
+                "id": "5dasc-4",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             },
             {
+                "id": "5dasc-",
                 "label-spanish": "",
                 "label-english": ""
             }
