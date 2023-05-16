@@ -1,7 +1,3 @@
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-import { getAuth, connectAuthEmulator, onAuthStateChanged } from "firebase/auth";
-
 const config = {
     apiKey: "***",
     authDomain: "***",
