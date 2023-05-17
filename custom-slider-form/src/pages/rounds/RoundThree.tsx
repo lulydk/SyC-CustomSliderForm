@@ -1,5 +1,5 @@
-import './RoundThree.css'
-import Round3Questions from '../../../data/round3.json'
+import './Rounds.css'
+import Round3Questions from '../../data/round3.json'
 
 export function RoundThree() {
     return (

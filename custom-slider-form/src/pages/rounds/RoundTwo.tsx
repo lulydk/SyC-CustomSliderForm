@@ -1,14 +1,14 @@
-import './RoundOne.css'
-import Round1Questions from '../../../data/round1.json'
-import { Slider } from '../../../components/form/slider/Slider'
+import './Rounds.css'
+import Round2Questions from '../../data/round2.json'
+import { Slider } from '../../components/form/slider/Slider'
 
-export function RoundOne() {
+export function RoundTwo() {
     return (
         <>
-            <span className='title'>5D-ASC</span>
-            <span className='description mb-4'>Ahora vamos a hacerte algunas preguntas sobre esa experiencia en particular.</span>
+            <span className='title'>EDI</span>
+            <span className='description mb-4'>Por favor, leé con atención las siguientes afirmaciones y calificá en qué medida se aplican a tu experiencia.</span>
             {
-                Round1Questions.map(data => {
+                Round2Questions.map(data => {
                     return (
                         data.prompts.map(question => {
                             return (
