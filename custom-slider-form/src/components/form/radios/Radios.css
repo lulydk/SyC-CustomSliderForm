@@ -1,0 +1,27 @@
+.prompt {
+    font-weight: 600;
+}
+
+.translate {
+    color: var(--primary);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.form-wrapper {
+    margin-bottom: 2em;
+}
+
+/* .form-check {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+
+.form-check-input {
+    margin: 0 !important;
+    padding: 0 !important;
+} */
