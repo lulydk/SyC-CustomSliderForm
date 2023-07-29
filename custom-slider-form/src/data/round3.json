@@ -1,12 +1,12 @@
 [
     {
         "__type": "choices",
-        "choice-0": "No, para nada",
-        "choice-1": "Tan leve que no puedo decidir",
-        "choice-2": "Leve",
-        "choice-3": "Moderado",
-        "choice-4": "Fuerte",
-        "choice-5": "Extremo, más que en cualquier otro momento de mi vida",
+        "choice-1": "1. No, para nada",
+        "choice-2": "2. Tan leve que no puedo decidir",
+        "choice-3": "3. Leve",
+        "choice-4": "4. Moderado",
+        "choice-5": "5. Fuerte",
+        "choice-6": "6. Extremo, más que en cualquier otro momento de mi vida",
 
         "prompts": [
             {
