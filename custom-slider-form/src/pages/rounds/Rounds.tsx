@@ -7,7 +7,7 @@ import '../../App.css'
 
 function Rounds() {
 
-    const { steps, currentStepIdx, step, isFirstStep, isLastStep, next, back } = useMultistepForm([ <RoundOne/>, <RoundTwo/>, <RoundThree/> ])
+  const { steps, currentStepIdx, step, isFirstStep, isLastStep, next, back } = useMultistepForm([ <RoundOne/>, <RoundTwo/>, <RoundThree/> ])
   
   return(
     <div>

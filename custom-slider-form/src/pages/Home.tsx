@@ -1,4 +1,3 @@
-
 import { ChangeEvent, FormEvent, useState } from 'react'
 import { signInUser, registerUser } from '../firebase/firebase'
 import { useNavigate } from 'react-router-dom'
