@@ -15,7 +15,7 @@
   flex-direction: column;
 }
 
-.buttonWrapper {
+.button-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -41,4 +41,17 @@
 
 .btn {
   width: fit-content;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.auth-form {
+  width: 50%;
+}
+
+hr {
+  width: 15%;
+  color: black;
 }
