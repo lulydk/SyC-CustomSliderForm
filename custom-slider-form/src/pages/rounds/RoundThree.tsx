@@ -1,8 +1,13 @@
 import './Rounds.css'
 import Round3Questions from '../../data/round3.json'
 import { Radios } from '../../components/form/radios/Radios'
+import { FormDataFields, FormDataFieldsR3 } from './FormDataFields'
 
-export function RoundThree() {
+type FormProps = FormDataFieldsR3 & {
+    updateFields: (fields: Partial<FormDataFields>) => void
+}
+
+export function RoundThree({r3_meq_1, r3_meq_2, r3_meq_3, r3_meq_4, r3_meq_5, r3_meq_6, r3_meq_7, r3_meq_8, r3_meq_9, r3_meq_10, r3_meq_11, r3_meq_12, r3_meq_13, r3_meq_14, r3_meq_15, r3_meq_16, r3_meq_17, r3_meq_18, r3_meq_19, r3_meq_20, r3_meq_21, r3_meq_22, r3_meq_23, r3_meq_24, r3_meq_25, r3_meq_26, r3_meq_27, r3_meq_28, r3_meq_29, r3_meq_30, updateFields}: FormProps) {
     return (
         <>
             <span className='title'>MEQ</span>
