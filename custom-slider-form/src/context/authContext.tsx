@@ -1,43 +1,49 @@
 import { User } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-import { SignOutUser, userStateListener } from "../firebase/firebase";
+import { auth, db, signOutUser, userStateListener } from "../firebase/firebase";
 import { createContext, useState, useEffect, ReactNode } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { DocumentData, DocumentReference, doc } from "firebase/firestore";
 
 interface Props {
   children?: ReactNode
 }
 
 export const AuthContext = createContext({
-  // "User" comes from firebase auth-public.d.ts
   currentUser: {} as User | null,
+  userDataRef: {} as DocumentReference<DocumentData> | null,
   setCurrentUser: (_user:User) => {},
+  setUserDataRef: (_dataRef:DocumentReference<DocumentData>) => {},
   signOut: () => {}
 });
 
 export const AuthProvider = ({ children }: Props) => {
-  const [currentUser, setCurrentUser] = useState<User | null>(null)
+  const [user] = useAuthState(auth);
+  const [currentUser, setCurrentUser] = useState<User | null>(user==undefined ? null:user)
+  const [userDataRef, setUserDataRef] = useState<DocumentReference<DocumentData> | null>(currentUser==null ? null:doc(db, 'users', currentUser.uid))
+  
   const navigate = useNavigate()
 
   useEffect(() => {
-    const unsubscribe = userStateListener((user) => {
-      if (user) {
-        setCurrentUser(user)
+    const unsubscribe = userStateListener((c_user) => {
+      if (c_user) {
+        setCurrentUser(c_user)
       }
     });
     return unsubscribe
   }, [setCurrentUser]);
 
-  // As soon as setting the current user to null, 
-  // the user will be redirected to the home page. 
   const signOut = () => {
-    SignOutUser()
+    signOutUser()
     setCurrentUser(null)
     navigate('/')
   }
 
   const value = {
     currentUser, 
+    userDataRef,
     setCurrentUser,
+    setUserDataRef,
     signOut
   }
 
