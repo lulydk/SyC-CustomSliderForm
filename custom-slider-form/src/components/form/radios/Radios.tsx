@@ -1,12 +1,31 @@
 import { useState } from 'react';
 import './Radios.css'
+import { FormDataFields, INITIAL_DATA_R3 } from '../../../pages/rounds/FormDataFields';
 
-export function Radios({ id, prompt, translation, choice1, choice2, choice3, choice4, choice5, choice6 } : { id: string; prompt: string; translation: string; choice1: string; choice2: string; choice3: string; choice4: string; choice5: string; choice6: string }) {
+export type RadioParams = {
+    id: string
+    prompt: string
+    translation: string
+    value: string
+    choice1: string
+    choice2: string
+    choice3: string
+    choice4: string
+    choice5: string
+    choice6: string
+}
+
+type FormProps = RadioParams & {
+    updateFields: (e: React.ChangeEvent<HTMLInputElement>) => void
+}
+
+export function Radios({ id, prompt, translation, value, choice1, choice2, choice3, choice4, choice5, choice6, updateFields } : FormProps) {
     
-    const [selectedOption, setSelectedOption] = useState('');
+    const [selectedOption, setSelectedOption] = useState(value);
     
     const handleOptionChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setSelectedOption(e.target.value)
+        setSelectedOption(e.target.value);
+        updateFields(e);
     }
 
     return (
@@ -20,7 +39,7 @@ export function Radios({ id, prompt, translation, choice1, choice2, choice3, cho
                     <input
                         type="radio"
                         className="form-check-input"
-                        name={choice1}
+                        name={id}
                         value={choice1}
                         checked={selectedOption === choice1}
                         onChange={handleOptionChange}
@@ -31,7 +50,7 @@ export function Radios({ id, prompt, translation, choice1, choice2, choice3, cho
                     <input
                         type="radio"
                         className="form-check-input"
-                        name={choice2}
+                        name={id}
                         value={choice2}
                         checked={selectedOption === choice2}
                         onChange={handleOptionChange}
@@ -42,7 +61,7 @@ export function Radios({ id, prompt, translation, choice1, choice2, choice3, cho
                     <input
                         type="radio"
                         className="form-check-input"
-                        name={choice3}
+                        name={id}
                         value={choice3}
                         checked={selectedOption === choice3}
                         onChange={handleOptionChange}
@@ -53,7 +72,7 @@ export function Radios({ id, prompt, translation, choice1, choice2, choice3, cho
                     <input
                         type="radio"
                         className="form-check-input"
-                        name={choice4}
+                        name={id}
                         value={choice4}
                         checked={selectedOption === choice4}
                         onChange={handleOptionChange}
@@ -64,7 +83,7 @@ export function Radios({ id, prompt, translation, choice1, choice2, choice3, cho
                     <input
                         type="radio"
                         className="form-check-input"
-                        name={choice5}
+                        name={id}
                         value={choice5}
                         checked={selectedOption === choice5}
                         onChange={handleOptionChange}
@@ -75,7 +94,7 @@ export function Radios({ id, prompt, translation, choice1, choice2, choice3, cho
                     <input
                         type="radio"
                         className="form-check-input"
-                        name={choice6}
+                        name={id}
                         value={choice6}
                         checked={selectedOption === choice6}
                         onChange={handleOptionChange}
