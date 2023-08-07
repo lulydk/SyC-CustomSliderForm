@@ -6,42 +6,42 @@
 
         "prompts": [
             {
-                "id": "edi-1",
+                "id": "r2_edi_1",
                 "label-spanish": "1. Experimenté una disolución de mi 'yo'.",
                 "label-english": "I experienced a dissolution of 'self' or ego."
             },
             {
-                "id": "edi-2",
+                "id": "r2_edi_2",
                 "label-spanish": "2. Me sentí uno con el universo.",
                 "label-english": "I felt at one with the universe."
             },
             {
-                "id": "edi-3",
+                "id": "r2_edi_3",
                 "label-spanish": "3. Experimenté una sensación de unión con los demás.",
                 "label-english": "I felt a sense of union with others."
             },
             {
-                "id": "edi-4",
+                "id": "r2_edi_4",
                 "label-spanish": "4. Sentí una disminución en mi sentido de la importancia personal",
                 "label-english": "I experienced a decrease in sense of self-importance."
             },
             {
-                "id": "edi-5",
+                "id": "r2_edi_5",
                 "label-spanish": "5. Experimenté una desintegración de mi 'yo'.",
                 "label-english": "I experienced a disintegration of 'self' or ego."
             },
             {
-                "id": "edi-6",
+                "id": "r2_edi_6",
                 "label-spanish": "6. Me sentí mucho menos absorbido por mis propios problemas y preocupaciones.",
                 "label-english": "I felt far less absorbed by own issues and concerns."
             },
             {
-                "id": "edi-7",
+                "id": "r2_edi_7",
                 "label-spanish": "7. Perdí todo sentido del 'yo'.",
                 "label-english": "I lost all sense of ego."
             },
             {
-                "id": "edi-8",
+                "id": "r2_edi_8",
                 "label-spanish": "8. Toda noción de mí mismo y de mi identidad se disolvió.",
                 "label-english": "All notion of self and identity dissolved away."
             }

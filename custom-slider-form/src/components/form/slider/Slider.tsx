@@ -1,12 +1,27 @@
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 import './Slider.css'
 
-export function Slider({ id, prompt, translation, lowerBound, higherBound } : { id: string; prompt: string; translation: string; lowerBound: string; higherBound: string }) {
+export type SliderParams = {
+    id: string
+    prompt: string
+    translation: string
+    value: number
+    lowerBound: string
+    higherBound: string
+    round: number
+}
 
-    const [sliderVal, setSliderVal] = useState(50)
+type FormProps = SliderParams & {
+    updateFields: (e: React.ChangeEvent<HTMLInputElement>) => void
+}
 
-    const onChangeValue = (e : React.FormEvent<HTMLInputElement>) => {
-        setSliderVal(+e.currentTarget.value)
+export function Slider({ id, prompt, translation, value, lowerBound, higherBound, round, updateFields } : FormProps) {
+
+    const [sliderVal, setSliderVal] = useState(value);
+
+    const onChangeValue = (e : React.ChangeEvent<HTMLInputElement>) => {
+        setSliderVal(+e.currentTarget.value);
+        updateFields(e);
     }
 
     return (
@@ -20,7 +35,7 @@ export function Slider({ id, prompt, translation, lowerBound, higherBound } : { 
                     <small>{ lowerBound }</small>
                 </div>
                 <div className="col">
-                    <input type="range" className="form-range" id={id} value={sliderVal} min={0} max={100} onChange={e => onChangeValue(e)} data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title={sliderVal} />
+                    <input type="range" className="form-range" id={id} name={id} value={sliderVal} min={0} max={100} onChange={e => onChangeValue(e)} data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title={sliderVal} />
                 </div>
                 <div className="col col-1 text-center">
                     <small>{ higherBound }</small>
