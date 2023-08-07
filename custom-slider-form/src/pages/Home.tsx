@@ -39,7 +39,7 @@ function Home() {
             }
             if (userCredential) {
                 resetFormFields();
-                navigate('/start');
+                navigate('/rounds');
             }
         } catch (error:any) {
             if (showRegister) {

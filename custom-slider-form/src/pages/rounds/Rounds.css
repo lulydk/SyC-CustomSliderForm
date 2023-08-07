@@ -6,3 +6,7 @@
 .form-range::-webkit-slider-thumb {
     background-color: var(--primary);
 }
+
+.wrapper-title {
+    padding-left: 10px;
+}
