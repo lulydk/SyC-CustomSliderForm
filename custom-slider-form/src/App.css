@@ -55,3 +55,23 @@ hr {
   width: 15%;
   color: black;
 }
+
+.start-form {
+  width: 550px;
+}
+
+.user-data-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boxsizingBorder {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.progress {
+  margin-bottom: 30px;
+}

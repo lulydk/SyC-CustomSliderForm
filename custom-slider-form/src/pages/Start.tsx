@@ -1,4 +1,8 @@
-import '.././App.css'
+import { AuthContext } from '../context/authContext';
+import { FormEvent, useContext, useEffect, useState } from "react";
+import { doc, updateDoc } from "firebase/firestore";
+import { db } from "../firebase/firebase";
+import '../App.css'
 
 type UpdateStateType = () => void;
 
@@ -6,7 +10,41 @@ interface RoundProps {
     updateState: UpdateStateType;
 }
 
+const defaultFormFields = {
+    age: null,
+    gender: "",
+    contactMail: ""
+}
+  
 export function Start({ updateState }: RoundProps) {    
+
+    const [ formData, setFormData ] = useState(defaultFormFields);
+    const { currentUser, userDataRef, setUserDataRef } = useContext(AuthContext);
+
+
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const { name, value } = e.target;
+        setFormData((prevFormData) => ({
+          ...prevFormData,
+          [name]: value,
+        }));
+    };
+
+    const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+        event.preventDefault()
+        try {
+            if (userDataRef == null && currentUser != null) {
+                setUserDataRef(doc(db, 'users', currentUser.uid));
+            }
+            if (userDataRef != null) {
+                await updateDoc(userDataRef, formData);
+                updateState();
+            }
+        } catch (error:any) {
+            console.log('Error en start', error.message);
+        }
+    };
+
     return (
     <>
         <span className='title'>Sueño y Consciencia</span>
@@ -41,8 +79,45 @@ export function Start({ updateState }: RoundProps) {
         <p>
             ¡Muchas gracias por tu participación!
         </p>
-        <div className='button-wrapper mt-3'>
-            <button className='btn btn-primary' onClick={updateState}>Siguiente</button>
+        <hr/>
+        <div className='mt-2'>
+            <span className='title'>Datos del participante</span>
+            <p>
+                Te recordamos que todos los datos recolectados son confidenciales.
+            </p>
+            {
+                currentUser &&
+                <form onSubmit={handleSubmit}>
+                <div className='col start-form'>
+                    <label className="form-label">Mail de contacto</label>
+                    <input required type='email' name='contactMail' className="form-control" placeholder="ejemplo@gmail.com" onChange={handleInputChange} />
+                </div>
+                <div className='col my-3 start-form'>
+                    <label className="form-label">Edad</label>
+                    <input required type='number' name='age' className="form-control" placeholder="18 o más" onChange={handleInputChange} />
+                </div>
+                <div className='col start-form'>
+                    <label className="form-label">Género</label>
+                    <div className="form-wrapper">
+                        <div className="form-check">
+                            <input required className="form-check-input" type="radio" name="gender" id="F" value="F" onChange={handleInputChange} />
+                            <label className="form-check-label">Femenino</label>
+                        </div>
+                        <div className="form-check">
+                            <input required className="form-check-input" type="radio" name="gender" id="M" value="M" onChange={handleInputChange} />
+                            <label className="form-check-label">Masculino</label>
+                        </div>
+                        <div className="form-check">
+                            <input required className="form-check-input" type="radio" name="gender" id="O" value="O" onChange={handleInputChange} />
+                            <label className="form-check-label">Otro</label>
+                        </div>
+                    </div>
+                </div>
+                <div className='button-wrapper mt-4 mb-2'>
+                    <button className='btn btn-primary' type='submit'>Continuar</button>
+                </div>
+            </form>
+            }
         </div>
     </>
     );
