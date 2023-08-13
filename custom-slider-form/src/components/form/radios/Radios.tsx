@@ -48,6 +48,7 @@ export function Radios({ id, prompt, translation, value, choice1, choice2, choic
                 </div>
                 <div className="form-check col">
                     <input
+                        required
                         type="radio"
                         className="form-check-input"
                         name={id}
@@ -59,6 +60,7 @@ export function Radios({ id, prompt, translation, value, choice1, choice2, choic
                 </div>
                 <div className="form-check col">
                     <input
+                        required
                         type="radio"
                         className="form-check-input"
                         name={id}
@@ -70,6 +72,7 @@ export function Radios({ id, prompt, translation, value, choice1, choice2, choic
                 </div>
                 <div className="form-check col">
                     <input
+                        required
                         type="radio"
                         className="form-check-input"
                         name={id}
@@ -81,6 +84,7 @@ export function Radios({ id, prompt, translation, value, choice1, choice2, choic
                 </div>
                 <div className="form-check col">
                     <input
+                        required
                         type="radio"
                         className="form-check-input"
                         name={id}
@@ -92,6 +96,7 @@ export function Radios({ id, prompt, translation, value, choice1, choice2, choic
                 </div>
                 <div className="form-check col">
                     <input
+                        required
                         type="radio"
                         className="form-check-input"
                         name={id}
