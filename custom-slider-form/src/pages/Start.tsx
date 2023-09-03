@@ -30,15 +30,26 @@ export function Start({ updateState }: RoundProps) {
         }));
     };
 
+    const [selectedOption, setSelectedOption] = useState('');
+    
+    const handleOptionChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setSelectedOption(e.target.value);
+        setFormData((prevFormData) => ({
+            ...prevFormData,
+            ['gender']: selectedOption,
+          }));
+    }
+
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-        event.preventDefault()
+        event.preventDefault();
         try {
             if (userDataRef == null && currentUser != null) {
+                console.log("userdataref is null");
                 setUserDataRef(doc(db, 'users', currentUser.uid));
             }
             if (userDataRef != null) {
-                await updateDoc(userDataRef, formData);
-                updateState();
+                console.log("updating doc");
+                updateDoc(userDataRef, formData).finally(updateState);
             }
         } catch (error:any) {
             console.log('Error en start', error.message);
@@ -88,35 +99,35 @@ export function Start({ updateState }: RoundProps) {
             {
                 currentUser &&
                 <form onSubmit={handleSubmit}>
-                <div className='col start-form'>
-                    <label className="form-label">Mail de contacto</label>
-                    <input required type='email' name='contactMail' className="form-control" placeholder="ejemplo@gmail.com" onChange={handleInputChange} />
-                </div>
-                <div className='col my-3 start-form'>
-                    <label className="form-label">Edad</label>
-                    <input required type='number' name='age' className="form-control" placeholder="18 o más" onChange={handleInputChange} />
-                </div>
-                <div className='col start-form'>
-                    <label className="form-label">Género</label>
-                    <div className="form-wrapper">
-                        <div className="form-check">
-                            <input required className="form-check-input" type="radio" name="gender" id="F" value="F" onChange={handleInputChange} />
-                            <label className="form-check-label">Femenino</label>
-                        </div>
-                        <div className="form-check">
-                            <input required className="form-check-input" type="radio" name="gender" id="M" value="M" onChange={handleInputChange} />
-                            <label className="form-check-label">Masculino</label>
-                        </div>
-                        <div className="form-check">
-                            <input required className="form-check-input" type="radio" name="gender" id="O" value="O" onChange={handleInputChange} />
-                            <label className="form-check-label">Otro</label>
+                    <div className='col start-form'>
+                        <label className="form-label">Mail de contacto</label>
+                        <input required type='email' name='contactMail' className="form-control" placeholder="ejemplo@gmail.com" onChange={handleInputChange} />
+                    </div>
+                    <div className='col my-3 start-form'>
+                        <label className="form-label">Edad</label>
+                        <input required type='number' name='age' className="form-control" placeholder="18 o más" onChange={handleInputChange} />
+                    </div>
+                    <div className='col start-form'>
+                        <label className="form-label">Género</label>
+                        <div className="form-wrapper">
+                            <div className="form-check">
+                                <input required className="form-check-input" type="radio" name="gender" id="F" value="F" onChange={handleOptionChange} />
+                                <label className="form-check-label">Femenino</label>
+                            </div>
+                            <div className="form-check">
+                                <input required className="form-check-input" type="radio" name="gender" id="M" value="M" onChange={handleOptionChange} />
+                                <label className="form-check-label">Masculino</label>
+                            </div>
+                            <div className="form-check">
+                                <input required className="form-check-input" type="radio" name="gender" id="O" value="O" onChange={handleOptionChange} />
+                                <label className="form-check-label">Otro</label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className='button-wrapper mt-4 mb-2'>
-                    <button className='btn btn-primary' type='submit'>Continuar</button>
-                </div>
-            </form>
+                    <div className='button-wrapper mt-4 mb-2'>
+                        <button className='btn btn-primary' type='submit'>Continuar</button>
+                    </div>
+                </form>
             }
         </div>
     </>

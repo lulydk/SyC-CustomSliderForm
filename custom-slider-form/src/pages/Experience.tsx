@@ -30,16 +30,18 @@ export function Experience({ updateState }: RoundProps) {
 
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault()
-        try {
-            if (userDataRef == null && currentUser != null) {
-                setUserDataRef(doc(db, 'users', currentUser.uid));
+        if (formData.experience.length > 0) {
+            try {
+                if (userDataRef == null && currentUser != null) {
+                    setUserDataRef(doc(db, 'users', currentUser.uid));
+                }
+                if (userDataRef != null) {
+                    await updateDoc(userDataRef, formData);
+                    updateState();
+                }
+            } catch (error:any) {
+                console.log('Error en Contanos tu Experiencia', error.message);
             }
-            if (userDataRef != null) {
-                await updateDoc(userDataRef, formData);
-                updateState();
-            }
-        } catch (error:any) {
-            console.log('Error en Contanos tu Experiencia', error.message);
         }
     };
 
@@ -53,10 +55,10 @@ export function Experience({ updateState }: RoundProps) {
             Ahora te vamos a pedir que relates la experiencia que consideraste:
         </p>
         {
-                currentUser &&
-                <form onSubmit={handleSubmit}>
+            currentUser &&
+            <form onSubmit={handleSubmit}>
                 <div className='col'>
-                    <textarea required rows={3} name='experience' className="form-control" placeholder="Lorem ipsum..." onChange={handleInputChange}/>
+                    <textarea required rows={3} name='experience' className="form-control" placeholder="Escribe tu experiencia aquí..." onChange={handleInputChange}/>
                 </div>
                 <div className='button-wrapper mt-4 mb-2'>
                     <button className='btn btn-primary' type='submit'>Continuar</button>

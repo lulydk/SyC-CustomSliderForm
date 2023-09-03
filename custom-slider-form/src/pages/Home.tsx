@@ -28,15 +28,20 @@ function Home() {
         );
     }
 
+    const authenticate = async () => {
+        var userCredential;
+        if (showRegister) {
+            userCredential = await registerUser(email, password);
+        } else {
+            userCredential = await signInUser(email, password);
+        }
+        return userCredential;
+    }
+
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         try {
-            var userCredential;
-            if (showRegister) {
-                userCredential = await registerUser(email, password);
-            } else {
-                userCredential = await signInUser(email, password);
-            }
+            let userCredential = await authenticate();
             if (userCredential) {
                 resetFormFields();
                 navigate('/rounds');
