@@ -2,12 +2,10 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, onAuthStateChanged, signOut, signInWithEmailAndPassword, createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, NextOrObserver, User, sendPasswordResetEmail } from 'firebase/auth';
 import { getFirestore, query, getDocs, collection, where, doc, setDoc } from "firebase/firestore";
 import { getFirebaseConfig } from './firebaseConfig';
-import { getStorage } from 'firebase/storage';
 
 const app = initializeApp(getFirebaseConfig());
 const auth = getAuth(app);
 const db = getFirestore(app);
-const storage = getStorage(app)
 
 export const signInUser = async (email: string, password: string) => {
     try {
@@ -41,8 +39,7 @@ export const registerUser = async (email: string, password: string) => {
         await setDoc(doc(db, "users", user.uid), {
           uid: user.uid,
           authProvider: "local",
-          email,
-          progress: 0
+          email
         });
         return res;
     } catch (err) {
@@ -65,8 +62,7 @@ export const continueWithGoogle = async () => {
                 uid: user.uid,
                 name: user.displayName,
                 authProvider: "google",
-                email: user.email,
-                progress: 0
+                email: user.email
             });
         }
     } catch (err) {
@@ -87,4 +83,4 @@ export const sendPasswordReset = async (email: string) => {
     }
 };
 
-export { auth, db, storage };
+export { auth, db };
