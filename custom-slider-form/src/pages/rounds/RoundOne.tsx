@@ -17,6 +17,9 @@ export function RoundOne({ updateState }: RoundProps) {
     
     const [ formData, setFormData ] = useState(INITIAL_DATA_R1);
     const { currentUser, userDataRef, setUserDataRef } = useContext(AuthContext);
+    const [currentRound, setCurrentRound] = useState(1);
+
+    const totalRounds = 3;
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
@@ -27,20 +30,38 @@ export function RoundOne({ updateState }: RoundProps) {
     };
 
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-        event.preventDefault()
-        try {
-            if (userDataRef == null && currentUser != null) {
-                setUserDataRef(doc(db, 'users', currentUser.uid));
+        event.preventDefault();
+        if (currentRound < totalRounds) {
+            setCurrentRound(currentRound + 1); // move to the next round
+            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+        } else {
+            try {
+                if (userDataRef == null && currentUser != null) {
+                    setUserDataRef(doc(db, 'users', currentUser.uid));
+                }
+                if (userDataRef != null) {
+                    updateForm1(userDataRef, formData);
+                    updateState();
+                }
+            } catch (error:any) {
+                console.log('Error en paso 1', error.message);
             }
-            if (userDataRef != null) {
-                updateForm1(userDataRef, formData);
-                updateState();
-            }
-        } catch (error:any) {
-            console.log('Error en paso 1', error.message);
         }
     };
- 
+
+    const getCurrentRoundQuestions = () => {
+        switch (currentRound) {
+          case 1:
+            return Round1Questions.prompts_group1;
+          case 2:
+            return Round1Questions.prompts_group2;
+          case 3:
+            return Round1Questions.prompts_group3;
+          default:
+            return [];
+        }
+      };
+    
     return (
     <>
         <div className='wrapper-title'>
@@ -49,13 +70,9 @@ export function RoundOne({ updateState }: RoundProps) {
         </div>
         <form onSubmit={handleSubmit}>
         {
-            Round1Questions.map(data => {
+            getCurrentRoundQuestions().map(question => {
                 return (
-                    data.prompts.map(question => {
-                        return (
-                            question['label-spanish'].length > 0 ? <Slider key={question['id']} id={question['id']} prompt={question['label-spanish']} translation={question['label-english']} value={formData[question['id'] as keyof typeof formData]} lowerBound={data['lower-bound']} higherBound={data['higher-bound']} round={1} updateFields={handleInputChange} /> : <></>
-                        )
-                    })
+                    question['label-spanish'].length > 0 ? <Slider key={question['id']} id={question['id']} prompt={question['label-spanish']} translation={question['label-english']} value={formData[question['id'] as keyof typeof formData]} lowerBound={Round1Questions['lower-bound']} higherBound={Round1Questions['higher-bound']} round={1} updateFields={handleInputChange} /> : <></>
                 )
             })
         }

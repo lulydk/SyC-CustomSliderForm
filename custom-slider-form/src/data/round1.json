@@ -1,480 +1,482 @@
-[
-    {
-        "__type": "slider",
-        "lower-bound": "No, no más de lo usual",
-        "higher-bound": "Sí, mucho más de lo usual",
+{
+    "__type": "slider",
+    "lower-bound": "No, no más de lo usual",
+    "higher-bound": "Sí, mucho más de lo usual",
 
-        "prompts": [
-            {
-                "id": "r1_5dasc_1",
-                "label-spanish": "1. Sentí que estaba en otro mundo maravilloso.",
-                "label-english": "I felt that I was in a wonderful other world."
-            },
-            {
-                "id": "r1_5dasc_2",
-                "label-spanish": "2. Mis pensamientos y acciones se ralentizaron.",
-                "label-english": "My thoughts and actions were slowed down."
-            },
-            {
-                "id": "r1_5dasc_3",
-                "label-spanish": "3. Las sensaciones corporales eran muy agradables.",
-                "label-english": "Bodily sensations were very enjoyable."
-            },
-            {
-                "id": "r1_5dasc_4",
-                "label-spanish": "4. Escuché palabras sueltas sin saber de dónde venían.",
-                "label-english": "I heard single words without knowing where they came from."
-            },
-            {
-                "id": "r1_5dasc_5",
-                "label-spanish": "5. Escuché timbres y tonos sin saber de dónde venían.",
-                "label-english": "I heard rings and tones without knowing where they came from."
-            },
-            {
-                "id": "r1_5dasc_6",
-                "label-spanish": "6. Sentí como si fuerzas oscuras me hubieran superado.",
-                "label-english": "I felt as if dark forces had overtaken me."
-            },
-            {
-                "id": "r1_5dasc_7",
-                "label-spanish": "7. Vi cosas que sabía que no eran reales.",
-                "label-english": "I saw things I knew were not real."
-            },
-            {
-                "id": "r1_5dasc_8",
-                "label-spanish": "8. Me sentí como un títere o una marioneta.",
-                "label-english": "I felt like a puppet or marionette."
-            },
-            {
-                "id": "r1_5dasc_9",
-                "label-spanish": "9. Me sentí conectado a un poder superior.",
-                "label-english": "I felt connected to a higher power."
-            },
-            {
-                "id": "r1_5dasc_10",
-                "label-spanish": "10. Me sentí adormecido.",
-                "label-english": "I felt sleepy."
-            },
-            {
-                "id": "r1_5dasc_11",
-                "label-spanish": "11. Se me ocurrió una melodía que tenía que repetir constantemente.",
-                "label-english": "A melody occured to me that I had to constantly repeat."
-            },
-            {
-                "id": "r1_5dasc_12",
-                "label-spanish": "12. Experimenté un placer sin límites.",
-                "label-english": "I experienced boundless pleasure."
-            },
-            {
-                "id": "r1_5dasc_13",
-                "label-spanish": "13. Los ruidos sin sentido sonaban como palabras o frases reales.",
-                "label-english": "Meaningless noises sounded like real words or phrases."
-            },
-            {
-                "id": "r1_5dasc_14",
-                "label-spanish": "14. Vi patrones regulares con los ojos cerrados o en completa oscuridad.",
-                "label-english": "I saw regular patterns with closed eyes or in complete darkness."
-            },
-            {
-                "id": "r1_5dasc_15",
-                "label-spanish": "15. Me sentí como si estuviera borracho/a",
-                "label-english": "I felt drunk."
-            },
-            {
-                "id": "r1_5dasc_16",
-                "label-spanish": "16. Sentí que estaba siendo transformado/a para siempre de una manera milagrosa.",
-                "label-english": "I felt I was being transformed forever in a miraculous way."
-            },
-            {
-                "id": "r1_5dasc_17",
-                "label-spanish": "17. Sentí que estaba al borde de la inconsciencia.",
-                "label-english": "I felt that I was on the verge of unconsciousness."
-            },
-            {
-                "id": "r1_5dasc_18",
-                "label-spanish": "18. Todo parecía unificarse en una unidad.",
-                "label-english": "Everything seemed to unify into a oneness."
-            },
-            {
-                "id": "r1_5dasc_19",
-                "label-spanish": "19. Escuché mis pensamientos como si los hubiera dicho en voz alta.",
-                "label-english": "I heard my thoughts as if I had spoken them out loud."
-            },
-            {
-                "id": "r1_5dasc_20",
-                "label-spanish": "20. Los sonidos parecían influir en lo que veía.",
-                "label-english": "Sounds seemed to influence what I saw."
-            },
-            {
-                "id": "r1_5dasc_21",
-                "label-spanish": "21. Me sentí atormentado/a",
-                "label-english": "I felt tormented."
-            },
-            {
-                "id": "r1_5dasc_22",
-                "label-spanish": "22. Vi colores con los ojos cerrados o en completa oscuridad.",
-                "label-english": "I saw colors with closed eyes or in complete darkness."
-            },
-            {
-                "id": "r1_5dasc_23",
-                "label-spanish": "23. Las formas parecían ser cambiadas por sonidos o ruidos.",
-                "label-english": "Shapes seemed to be changed by sounds or noises."
-            },
-            {
-                "id": "r1_5dasc_24",
-                "label-spanish": "24. Percibía todo borroso, como a través de una especie de niebla.",
-                "label-english": "I perceived everything as blurry, as if through a kind of fog."
-            },
-            {
-                "id": "r1_5dasc_25",
-                "label-spanish": "25. Una voz comentaba todo lo que pensaba aunque no había nadie.",
-                "label-english": "A voice commented on everything I thought although no one was there."
-            },
-            {
-                "id": "r1_5dasc_26",
-                "label-spanish": "26. Sentí como si ya no tuviera un cuerpo.",
-                "label-english": "I felt as if I no longer had a body."
-            },
-            {
-                "id": "r1_5dasc_27",
-                "label-spanish": "27. Me sentía incapaz de tomar la más mínima decisión.",
-                "label-english": "I felt incapable of making even the smallest decision."
-            },
-            {
-                "id": "r1_5dasc_28",
-                "label-spanish": "28. Algunas cosas cotidianas adquirieron un significado especial.",
-                "label-english": "Some everyday things acquired special meaning."
-            },
-            {
-                "id": "r1_5dasc_29",
-                "label-spanish": "29. Me sentí somnoliento.",
-                "label-english": "I felt drowsy."
-            },
-            {
-                "id": "r1_5dasc_30",
-                "label-spanish": "30. Escuché oraciones completas sin saber de dónde venían.",
-                "label-english": "I heard complete sentences without knowing where they came from."
-            },
-            {
-                "id": "r1_5dasc_31",
-                "label-spanish": "31. Las cosas en mi entorno tenían un nuevo y extraño significado.",
-                "label-english": "Things in my environment had a new strange meaning."
-            },
-            {
-                "id": "r1_5dasc_32",
-                "label-spanish": "32. Tuve miedo de que el estado en el que me encontraba durara para siempre.",
-                "label-english": "I was afraid that the state I was in would last forever."
-            },
-            {
-                "id": "r1_5dasc_33",
-                "label-spanish": "33. Vi brillos o destellos de luz con los ojos cerrados o en completa oscuridad.",
-                "label-english": "I saw brightness or flashes of light with closed eyes or in complete darkness."
-            },
-            {
-                "id": "r1_5dasc_34",
-                "label-spanish": "34. Me sentí uno con mi entorno.",
-                "label-english": "I felt one with my surroundings."
-            },
-            {
-                "id": "r1_5dasc_35",
-                "label-spanish": "35. Las preocupaciones y ansiedades de la vida cotidiana se sentían sin importancia.",
-                "label-english": "Worries and anxieties of everyday life felt unimportant."
-            },
-            {
-                "id": "r1_5dasc_36",
-                "label-spanish": "36. Mi sentido del tiempo y del espacio estaba alterado. ",
-                "label-english": "My sense of time and space was altered as if I was dreaming."
-            },
-            {
-                "id": "r1_5dasc_37",
-                "label-spanish": "37. Mi percepción estaba borrosa.",
-                "label-english": "My perception was blurred."
-            },
-            {
-                "id": "r1_5dasc_38",
-                "label-spanish": "38. Tuve dificultades para distinguir lo importante de lo no importante.",
-                "label-english": "I had difficulties in distinguishing important from unimportant."
-            },
-            {
-                "id": "r1_5dasc_39",
-                "label-spanish": "39. Vi pasar escenas enteras con los ojos cerrados o en completa oscuridad.",
-                "label-english": "I saw whole scenes roll by with closed eyes or in complete darkness."
-            },
-            {
-                "id": "r1_5dasc_40",
-                "label-spanish": "40. Sentí poderes extraordinarios dentro de mí.",
-                "label-english": "I felt extraordinary powers within myself."
-            },
-            {
-                "id": "r1_5dasc_41",
-                "label-spanish": "41. Experimenté un toque de eternidad.",
-                "label-english": "I experienced a touch of eternity."
-            },
-            {
-                "id": "r1_5dasc_42",
-                "label-spanish": "42. Los conflictos y las contradicciones parecían disolverse.",
-                "label-english": "Conflicts and contradictions seemed to dissolve."
-            },
-            {
-                "id": "r1_5dasc_43",
-                "label-spanish": "43. Estaba asustado sin saber exactamente por qué.",
-                "label-english": "I was scared without knowing exactly why."
-            },
-            {
-                "id": "r1_5dasc_44",
-                "label-spanish": "44. Experimenté todo como terriblemente distorsionado.",
-                "label-english": "I experienced everything as frighteningly distorted."
-            },
-            {
-                "id": "r1_5dasc_45",
-                "label-spanish": "45. El mundo me parecía más allá del bien y del mal.",
-                "label-english": "The world seemed to me beyond good and evil."
-            },
-            {
-                "id": "r1_5dasc_46",
-                "label-spanish": "46. Experimenté mi entorno como extraño y raro.",
-                "label-english": "I experienced my surroundings as strange and weird."
-            },
-            {
-                "id": "r1_5dasc_47",
-                "label-spanish": "47. Me sentí como si estuviera paralizado.",
-                "label-english": "I felt as if I were paralyzed."
-            },
-            {
-                "id": "r1_5dasc_48",
-                "label-spanish": "48. Escuché música sin saber de dónde venía.",
-                "label-english": "I heard music without knowing where it came from."
-            },
-            {
-                "id": "r1_5dasc_49",
-                "label-spanish": "49. Escuché débilmente algo que no pude identificar.",
-                "label-english": "I heard something faintly that I could not identify."
-            },
-            {
-                "id": "r1_5dasc_50",
-                "label-spanish": "50. Tuve una gran sensación de profundidad en mi.",
-                "label-english": "I felt very profound."
-            },
-            {
-                "id": "r1_5dasc_51",
-                "label-spanish": "51. Sentí mi cuerpo entumecido",
-                "label-english": "I felt numb."
-            },
-            {
-                "id": "r1_5dasc_52",
-                "label-spanish": "52. Experimenté el pasado, el presente y el futuro como si fuesen uno solo.",
-                "label-english": "I experienced past, present, and future as a oneness."
-            },
-            {
-                "id": "r1_5dasc_53",
-                "label-spanish": "53. Experimenté un vacío insoportable.",
-                "label-english": "I experienced unbearable emptiness."
-            },
-            {
-                "id": "r1_5dasc_54",
-                "label-spanish": "54. Me sentí emocionalmente involucrado con los objetos de mi entorno.",
-                "label-english": "Objects in my surroundings engaged me emotionally much more than usual."
-            },
-            {
-                "id": "r1_5dasc_55",
-                "label-spanish": "55. A partir de un ruido inicialmente difuso, que no pude identificar como real, evolucionaron timbres y tonos claros.",
-                "label-english": "From an initially diffuse noise, which I could not identify as real, clear rings and tones evolved."
-            },
-            {
-                "id": "r1_5dasc_56",
-                "label-spanish": "56. Me sentí bajo amenaza.",
-                "label-english": "I felt threatened."
-            },
-            {
-                "id": "r1_5dasc_57",
-                "label-spanish": "57. Muchas cosas me parecieron de una belleza impresionante.",
-                "label-english": "Many things appeared to me as breathtakingly beautiful."
-            },
-            {
-                "id": "r1_5dasc_58",
-                "label-spanish": "58. Me vinieron a la mente cosas que creí olvidadas hace mucho tiempo.",
-                "label-english": "Things came to my mind that I thought long forgotten."
-            },
-            {
-                "id": "r1_5dasc_59",
-                "label-spanish": "59. Me sentí como lo hago poco antes de quedarme dormido.",
-                "label-english": "I felt like I do shortly before falling asleep."
-            },
-            {
-                "id": "r1_5dasc_60",
-                "label-spanish": "60. Mi cuerpo se sentía entumecido, sin vida y/o extraño.",
-                "label-english": "My body felt numb, lifeless, and/or alien."
-            },
-            {
-                "id": "r1_5dasc_61",
-                "label-spanish": "61. Me sentí como si estuviera medio dormido.",
-                "label-english": "I felt as if I was half-asleep."
-            },
-            {
-                "id": "r1_5dasc_62",
-                "label-spanish": "62. Tuve la impresión de que estaba fuera de mi cuerpo.",
-                "label-english": "I had the impression I was out of my body."
-            },
-            {
-                "id": "r1_5dasc_63",
-                "label-spanish": "63. Me sentí como si estuviera flotando.",
-                "label-english": "I felt as if I was floating."
-            },
-            {
-                "id": "r1_5dasc_64",
-                "label-spanish": "64. Me sentí aislado/a de todo y de todos.",
-                "label-english": "I felt isolated from everything and everyone."
-            },
-            {
-                "id": "r1_5dasc_65",
-                "label-spanish": "65. Escuché voces que no venían de los alrededores como de costumbre.",
-                "label-english": "I heard voices that did not come from the surroundings as usual."
-            },
-            {
-                "id": "r1_5dasc_66",
-                "label-spanish": "66. Escuché algo como un zumbido o silbido sin reconocer la causa.",
-                "label-english": "I heard something like a buzzing, swooshing, or humming without recognizing the cause."
-            },
-            {
-                "id": "r1_5dasc_67",
-                "label-spanish": "67. No pude completar un pensamiento; mis pensamientos se desconectaban repetidamente.",
-                "label-english": "I was not able to complete a thought; my thoughts repeatedly became disconnected."
-            },
-            {
-                "id": "r1_5dasc_68",
-                "label-spanish": "68. Me sentí como si estuviera a punto de quedarme dormido.",
-                "label-english": "I felt I was about to fall asleep."
-            },
-            {
-                "id": "r1_5dasc_69",
-                "label-spanish": "69. Tuve una revelación sobre cuestiones que antes me parecían un desafío.",
-                "label-english": "I had insights into connections that had previously puzzled me."
-            },
-            {
-                "id": "r1_5dasc_70",
-                "label-spanish": "70. Muchas cosas me parecieron increíblemente divertidas.",
-                "label-english": "Many things seemed incredibly funny to me."
-            },
-            {
-                "id": "r1_5dasc_71",
-                "label-spanish": "71. Los límites entre mi entorno y yo parecían desdibujarse.",
-                "label-english": "The boundaries between myself and my surroundings seemed to blur."
-            },
-            {
-                "id": "r1_5dasc_72",
-                "label-spanish": "72. Podía ver imágenes de mi memoria o imaginación con extrema claridad.",
-                "label-english": "I could see images from my memory or imagination with extreme clarity."
-            },
-            {
-                "id": "r1_5dasc_73",
-                "label-spanish": "73. Me sentí totalmente libre y liberado de todas las obligaciones.",
-                "label-english": "I felt totally free and released from all obligations."
-            },
-            {
-                "id": "r1_5dasc_74",
-                "label-spanish": "74. Escuché ruidos difusos sin saber de dónde venían.",
-                "label-english": "I heard diffuse noises without knowing where they came from."
-            },
-            {
-                "id": "r1_5dasc_75",
-                "label-spanish": "75. Los colores de las cosas parecían ser alterados por sonidos o ruidos.",
-                "label-english": "The colors of things seemed to be altered by sounds or noises."
-            },
-            {
-                "id": "r1_5dasc_76",
-                "label-spanish": "76. Los sonidos y ruidos eran más débiles de lo habitual.",
-                "label-english": "Sounds and noises were fainter than usual."
-            },
-            {
-                "id": "r1_5dasc_77",
-                "label-spanish": "77. Tuve pensamientos muy originales.",
-                "label-english": "I had very original thoughts."
-            },
-            {
-                "id": "r1_5dasc_78",
-                "label-spanish": "78. Tuve la sensación de que ya no tenía voluntad propia.",
-                "label-english": "I had the feeling that I no longer had my own will."
-            },
-            {
-                "id": "r1_5dasc_79",
-                "label-spanish": "79. Tuve miedo de perder el control sobre mí mismo.",
-                "label-english": "I was afraid of losing control over myself."
-            },
-            {
-                "id": "r1_5dasc_80",
-                "label-spanish": "80. Me quedé congelado en una posición muy poco natural durante un período prolongado de tiempo.",
-                "label-english": "I stayed frozen in an very unnatural position for an extended period of time."
-            },
-            {
-                "id": "r1_5dasc_81",
-                "label-spanish": "81. Experimenté una sensación de asombro",
-                "label-english": "I experienced a kind of awe."
-            },
-            {
-                "id": "r1_5dasc_82",
-                "label-spanish": "82. Mi imaginación era extremadamente vívida.",
-                "label-english": "My imagination was extremely vivid."
-            },
-            {
-                "id": "r1_5dasc_83",
-                "label-spanish": "83. Las cosas a mi alrededor parecían más pequeñas o más grandes.",
-                "label-english": "Things in my surroundings appeared smaller or larger."
-            },
-            {
-                "id": "r1_5dasc_84",
-                "label-spanish": "84. Me sentí agotado.",
-                "label-english": "I felt exhausted."
-            },
-            {
-                "id": "r1_5dasc_85",
-                "label-spanish": "85. El tiempo pasó lentamente, de una manera atormentadora.",
-                "label-english": "Time passed slowly in a tormenting way."
-            },
-            {
-                "id": "r1_5dasc_86",
-                "label-spanish": "86. Experimenté una profunda paz interior.",
-                "label-english": "I experienced profound inner peace."
-            },
-            {
-                "id": "r1_5dasc_87",
-                "label-spanish": "87. Todo a mi alrededor parecía estar animado y lleno de vida.",
-                "label-english": "Everything around me seemed to be animated with life."
-            },
-            {
-                "id": "r1_5dasc_88",
-                "label-spanish": "88. Todo sucedió tan rápido que no pude seguirlo todo.",
-                "label-english": "Everything happened so fast that I could not follow it all."
-            },
-            {
-                "id": "r1_5dasc_89",
-                "label-spanish": "89. Tenía la sensación de que algo terrible iba a pasar.",
-                "label-english": "I had the feeling that something terrible was going to happen."
-            },
-            {
-                "id": "r1_5dasc_90",
-                "label-spanish": "90. Pude recordar ciertos eventos con una claridad superior.",
-                "label-english": "I was able to remember certain events with exceeding clarity."
-            },
-            {
-                "id": "r1_5dasc_91",
-                "label-spanish": "91. Experimenté un amor que todo lo abarca.",
-                "label-english": "I experienced an all-embracing love."
-            },
-            {
-                "id": "r1_5dasc_92",
-                "label-spanish": "92. Había sonidos en la habitación que creo que era poco probable que fueran reales.",
-                "label-english": "There were sounds in the room that I feel were unlikely to have been real."
-            },
-            {
-                "id": "r1_5dasc_93",
-                "label-spanish": "93. Escuché un tictac, golpes, timbres o traqueteos sin poder reconocer la causa.",
-                "label-english": "I heard a ticking, knocking, ringing, or rattling without being able to recognize the cause."
-            },
-            {
-                "id": "r1_5dasc_94",
-                "label-spanish": "94. Mi experiencia tuvo aspectos religiosos.",
-                "label-english": "My experience had religious aspects to it."
-            }
-        ]
-    }
-]
+    "prompts_group1": [
+        {
+            "id": "r1_5dasc_1",
+            "label-spanish": "1. Sentí que estaba en otro mundo maravilloso.",
+            "label-english": "I felt that I was in a wonderful other world."
+        },
+        {
+            "id": "r1_5dasc_2",
+            "label-spanish": "2. Mis pensamientos y acciones se ralentizaron.",
+            "label-english": "My thoughts and actions were slowed down."
+        },
+        {
+            "id": "r1_5dasc_3",
+            "label-spanish": "3. Las sensaciones corporales eran muy agradables.",
+            "label-english": "Bodily sensations were very enjoyable."
+        },
+        {
+            "id": "r1_5dasc_4",
+            "label-spanish": "4. Escuché palabras sueltas sin saber de dónde venían.",
+            "label-english": "I heard single words without knowing where they came from."
+        },
+        {
+            "id": "r1_5dasc_5",
+            "label-spanish": "5. Escuché timbres y tonos sin saber de dónde venían.",
+            "label-english": "I heard rings and tones without knowing where they came from."
+        },
+        {
+            "id": "r1_5dasc_6",
+            "label-spanish": "6. Sentí como si fuerzas oscuras me hubieran superado.",
+            "label-english": "I felt as if dark forces had overtaken me."
+        },
+        {
+            "id": "r1_5dasc_7",
+            "label-spanish": "7. Vi cosas que sabía que no eran reales.",
+            "label-english": "I saw things I knew were not real."
+        },
+        {
+            "id": "r1_5dasc_8",
+            "label-spanish": "8. Me sentí como un títere o una marioneta.",
+            "label-english": "I felt like a puppet or marionette."
+        },
+        {
+            "id": "r1_5dasc_9",
+            "label-spanish": "9. Me sentí conectado a un poder superior.",
+            "label-english": "I felt connected to a higher power."
+        },
+        {
+            "id": "r1_5dasc_10",
+            "label-spanish": "10. Me sentí adormecido.",
+            "label-english": "I felt sleepy."
+        },
+        {
+            "id": "r1_5dasc_11",
+            "label-spanish": "11. Se me ocurrió una melodía que tenía que repetir constantemente.",
+            "label-english": "A melody occured to me that I had to constantly repeat."
+        },
+        {
+            "id": "r1_5dasc_12",
+            "label-spanish": "12. Experimenté un placer sin límites.",
+            "label-english": "I experienced boundless pleasure."
+        },
+        {
+            "id": "r1_5dasc_13",
+            "label-spanish": "13. Los ruidos sin sentido sonaban como palabras o frases reales.",
+            "label-english": "Meaningless noises sounded like real words or phrases."
+        },
+        {
+            "id": "r1_5dasc_14",
+            "label-spanish": "14. Vi patrones regulares con los ojos cerrados o en completa oscuridad.",
+            "label-english": "I saw regular patterns with closed eyes or in complete darkness."
+        },
+        {
+            "id": "r1_5dasc_15",
+            "label-spanish": "15. Me sentí como si estuviera borracho/a",
+            "label-english": "I felt drunk."
+        },
+        {
+            "id": "r1_5dasc_16",
+            "label-spanish": "16. Sentí que estaba siendo transformado/a para siempre de una manera milagrosa.",
+            "label-english": "I felt I was being transformed forever in a miraculous way."
+        },
+        {
+            "id": "r1_5dasc_17",
+            "label-spanish": "17. Sentí que estaba al borde de la inconsciencia.",
+            "label-english": "I felt that I was on the verge of unconsciousness."
+        },
+        {
+            "id": "r1_5dasc_18",
+            "label-spanish": "18. Todo parecía unificarse en una unidad.",
+            "label-english": "Everything seemed to unify into a oneness."
+        },
+        {
+            "id": "r1_5dasc_19",
+            "label-spanish": "19. Escuché mis pensamientos como si los hubiera dicho en voz alta.",
+            "label-english": "I heard my thoughts as if I had spoken them out loud."
+        },
+        {
+            "id": "r1_5dasc_20",
+            "label-spanish": "20. Los sonidos parecían influir en lo que veía.",
+            "label-english": "Sounds seemed to influence what I saw."
+        },
+        {
+            "id": "r1_5dasc_21",
+            "label-spanish": "21. Me sentí atormentado/a",
+            "label-english": "I felt tormented."
+        },
+        {
+            "id": "r1_5dasc_22",
+            "label-spanish": "22. Vi colores con los ojos cerrados o en completa oscuridad.",
+            "label-english": "I saw colors with closed eyes or in complete darkness."
+        },
+        {
+            "id": "r1_5dasc_23",
+            "label-spanish": "23. Las formas parecían ser cambiadas por sonidos o ruidos.",
+            "label-english": "Shapes seemed to be changed by sounds or noises."
+        },
+        {
+            "id": "r1_5dasc_24",
+            "label-spanish": "24. Percibía todo borroso, como a través de una especie de niebla.",
+            "label-english": "I perceived everything as blurry, as if through a kind of fog."
+        },
+        {
+            "id": "r1_5dasc_25",
+            "label-spanish": "25. Una voz comentaba todo lo que pensaba aunque no había nadie.",
+            "label-english": "A voice commented on everything I thought although no one was there."
+        },
+        {
+            "id": "r1_5dasc_26",
+            "label-spanish": "26. Sentí como si ya no tuviera un cuerpo.",
+            "label-english": "I felt as if I no longer had a body."
+        },
+        {
+            "id": "r1_5dasc_27",
+            "label-spanish": "27. Me sentía incapaz de tomar la más mínima decisión.",
+            "label-english": "I felt incapable of making even the smallest decision."
+        },
+        {
+            "id": "r1_5dasc_28",
+            "label-spanish": "28. Algunas cosas cotidianas adquirieron un significado especial.",
+            "label-english": "Some everyday things acquired special meaning."
+        },
+        {
+            "id": "r1_5dasc_29",
+            "label-spanish": "29. Me sentí somnoliento.",
+            "label-english": "I felt drowsy."
+        },
+        {
+            "id": "r1_5dasc_30",
+            "label-spanish": "30. Escuché oraciones completas sin saber de dónde venían.",
+            "label-english": "I heard complete sentences without knowing where they came from."
+        }
+    ],
+    "prompts_group2": [
+        {
+            "id": "r1_5dasc_31",
+            "label-spanish": "31. Las cosas en mi entorno tenían un nuevo y extraño significado.",
+            "label-english": "Things in my environment had a new strange meaning."
+        },
+        {
+            "id": "r1_5dasc_32",
+            "label-spanish": "32. Tuve miedo de que el estado en el que me encontraba durara para siempre.",
+            "label-english": "I was afraid that the state I was in would last forever."
+        },
+        {
+            "id": "r1_5dasc_33",
+            "label-spanish": "33. Vi brillos o destellos de luz con los ojos cerrados o en completa oscuridad.",
+            "label-english": "I saw brightness or flashes of light with closed eyes or in complete darkness."
+        },
+        {
+            "id": "r1_5dasc_34",
+            "label-spanish": "34. Me sentí uno con mi entorno.",
+            "label-english": "I felt one with my surroundings."
+        },
+        {
+            "id": "r1_5dasc_35",
+            "label-spanish": "35. Las preocupaciones y ansiedades de la vida cotidiana se sentían sin importancia.",
+            "label-english": "Worries and anxieties of everyday life felt unimportant."
+        },
+        {
+            "id": "r1_5dasc_36",
+            "label-spanish": "36. Mi sentido del tiempo y del espacio estaba alterado. ",
+            "label-english": "My sense of time and space was altered as if I was dreaming."
+        },
+        {
+            "id": "r1_5dasc_37",
+            "label-spanish": "37. Mi percepción estaba borrosa.",
+            "label-english": "My perception was blurred."
+        },
+        {
+            "id": "r1_5dasc_38",
+            "label-spanish": "38. Tuve dificultades para distinguir lo importante de lo no importante.",
+            "label-english": "I had difficulties in distinguishing important from unimportant."
+        },
+        {
+            "id": "r1_5dasc_39",
+            "label-spanish": "39. Vi pasar escenas enteras con los ojos cerrados o en completa oscuridad.",
+            "label-english": "I saw whole scenes roll by with closed eyes or in complete darkness."
+        },
+        {
+            "id": "r1_5dasc_40",
+            "label-spanish": "40. Sentí poderes extraordinarios dentro de mí.",
+            "label-english": "I felt extraordinary powers within myself."
+        },
+        {
+            "id": "r1_5dasc_41",
+            "label-spanish": "41. Experimenté un toque de eternidad.",
+            "label-english": "I experienced a touch of eternity."
+        },
+        {
+            "id": "r1_5dasc_42",
+            "label-spanish": "42. Los conflictos y las contradicciones parecían disolverse.",
+            "label-english": "Conflicts and contradictions seemed to dissolve."
+        },
+        {
+            "id": "r1_5dasc_43",
+            "label-spanish": "43. Estaba asustado sin saber exactamente por qué.",
+            "label-english": "I was scared without knowing exactly why."
+        },
+        {
+            "id": "r1_5dasc_44",
+            "label-spanish": "44. Experimenté todo como terriblemente distorsionado.",
+            "label-english": "I experienced everything as frighteningly distorted."
+        },
+        {
+            "id": "r1_5dasc_45",
+            "label-spanish": "45. El mundo me parecía más allá del bien y del mal.",
+            "label-english": "The world seemed to me beyond good and evil."
+        },
+        {
+            "id": "r1_5dasc_46",
+            "label-spanish": "46. Experimenté mi entorno como extraño y raro.",
+            "label-english": "I experienced my surroundings as strange and weird."
+        },
+        {
+            "id": "r1_5dasc_47",
+            "label-spanish": "47. Me sentí como si estuviera paralizado.",
+            "label-english": "I felt as if I were paralyzed."
+        },
+        {
+            "id": "r1_5dasc_48",
+            "label-spanish": "48. Escuché música sin saber de dónde venía.",
+            "label-english": "I heard music without knowing where it came from."
+        },
+        {
+            "id": "r1_5dasc_49",
+            "label-spanish": "49. Escuché débilmente algo que no pude identificar.",
+            "label-english": "I heard something faintly that I could not identify."
+        },
+        {
+            "id": "r1_5dasc_50",
+            "label-spanish": "50. Tuve una gran sensación de profundidad en mi.",
+            "label-english": "I felt very profound."
+        },
+        {
+            "id": "r1_5dasc_51",
+            "label-spanish": "51. Sentí mi cuerpo entumecido",
+            "label-english": "I felt numb."
+        },
+        {
+            "id": "r1_5dasc_52",
+            "label-spanish": "52. Experimenté el pasado, el presente y el futuro como si fuesen uno solo.",
+            "label-english": "I experienced past, present, and future as a oneness."
+        },
+        {
+            "id": "r1_5dasc_53",
+            "label-spanish": "53. Experimenté un vacío insoportable.",
+            "label-english": "I experienced unbearable emptiness."
+        },
+        {
+            "id": "r1_5dasc_54",
+            "label-spanish": "54. Me sentí emocionalmente involucrado con los objetos de mi entorno.",
+            "label-english": "Objects in my surroundings engaged me emotionally much more than usual."
+        },
+        {
+            "id": "r1_5dasc_55",
+            "label-spanish": "55. A partir de un ruido inicialmente difuso, que no pude identificar como real, evolucionaron timbres y tonos claros.",
+            "label-english": "From an initially diffuse noise, which I could not identify as real, clear rings and tones evolved."
+        },
+        {
+            "id": "r1_5dasc_56",
+            "label-spanish": "56. Me sentí bajo amenaza.",
+            "label-english": "I felt threatened."
+        },
+        {
+            "id": "r1_5dasc_57",
+            "label-spanish": "57. Muchas cosas me parecieron de una belleza impresionante.",
+            "label-english": "Many things appeared to me as breathtakingly beautiful."
+        },
+        {
+            "id": "r1_5dasc_58",
+            "label-spanish": "58. Me vinieron a la mente cosas que creí olvidadas hace mucho tiempo.",
+            "label-english": "Things came to my mind that I thought long forgotten."
+        },
+        {
+            "id": "r1_5dasc_59",
+            "label-spanish": "59. Me sentí como lo hago poco antes de quedarme dormido.",
+            "label-english": "I felt like I do shortly before falling asleep."
+        },
+        {
+            "id": "r1_5dasc_60",
+            "label-spanish": "60. Mi cuerpo se sentía entumecido, sin vida y/o extraño.",
+            "label-english": "My body felt numb, lifeless, and/or alien."
+        }
+    ],
+    "prompts_group3": [
+        {
+            "id": "r1_5dasc_61",
+            "label-spanish": "61. Me sentí como si estuviera medio dormido.",
+            "label-english": "I felt as if I was half-asleep."
+        },
+        {
+            "id": "r1_5dasc_62",
+            "label-spanish": "62. Tuve la impresión de que estaba fuera de mi cuerpo.",
+            "label-english": "I had the impression I was out of my body."
+        },
+        {
+            "id": "r1_5dasc_63",
+            "label-spanish": "63. Me sentí como si estuviera flotando.",
+            "label-english": "I felt as if I was floating."
+        },
+        {
+            "id": "r1_5dasc_64",
+            "label-spanish": "64. Me sentí aislado/a de todo y de todos.",
+            "label-english": "I felt isolated from everything and everyone."
+        },
+        {
+            "id": "r1_5dasc_65",
+            "label-spanish": "65. Escuché voces que no venían de los alrededores como de costumbre.",
+            "label-english": "I heard voices that did not come from the surroundings as usual."
+        },
+        {
+            "id": "r1_5dasc_66",
+            "label-spanish": "66. Escuché algo como un zumbido o silbido sin reconocer la causa.",
+            "label-english": "I heard something like a buzzing, swooshing, or humming without recognizing the cause."
+        },
+        {
+            "id": "r1_5dasc_67",
+            "label-spanish": "67. No pude completar un pensamiento; mis pensamientos se desconectaban repetidamente.",
+            "label-english": "I was not able to complete a thought; my thoughts repeatedly became disconnected."
+        },
+        {
+            "id": "r1_5dasc_68",
+            "label-spanish": "68. Me sentí como si estuviera a punto de quedarme dormido.",
+            "label-english": "I felt I was about to fall asleep."
+        },
+        {
+            "id": "r1_5dasc_69",
+            "label-spanish": "69. Tuve una revelación sobre cuestiones que antes me parecían un desafío.",
+            "label-english": "I had insights into connections that had previously puzzled me."
+        },
+        {
+            "id": "r1_5dasc_70",
+            "label-spanish": "70. Muchas cosas me parecieron increíblemente divertidas.",
+            "label-english": "Many things seemed incredibly funny to me."
+        },
+        {
+            "id": "r1_5dasc_71",
+            "label-spanish": "71. Los límites entre mi entorno y yo parecían desdibujarse.",
+            "label-english": "The boundaries between myself and my surroundings seemed to blur."
+        },
+        {
+            "id": "r1_5dasc_72",
+            "label-spanish": "72. Podía ver imágenes de mi memoria o imaginación con extrema claridad.",
+            "label-english": "I could see images from my memory or imagination with extreme clarity."
+        },
+        {
+            "id": "r1_5dasc_73",
+            "label-spanish": "73. Me sentí totalmente libre y liberado de todas las obligaciones.",
+            "label-english": "I felt totally free and released from all obligations."
+        },
+        {
+            "id": "r1_5dasc_74",
+            "label-spanish": "74. Escuché ruidos difusos sin saber de dónde venían.",
+            "label-english": "I heard diffuse noises without knowing where they came from."
+        },
+        {
+            "id": "r1_5dasc_75",
+            "label-spanish": "75. Los colores de las cosas parecían ser alterados por sonidos o ruidos.",
+            "label-english": "The colors of things seemed to be altered by sounds or noises."
+        },
+        {
+            "id": "r1_5dasc_76",
+            "label-spanish": "76. Los sonidos y ruidos eran más débiles de lo habitual.",
+            "label-english": "Sounds and noises were fainter than usual."
+        },
+        {
+            "id": "r1_5dasc_77",
+            "label-spanish": "77. Tuve pensamientos muy originales.",
+            "label-english": "I had very original thoughts."
+        },
+        {
+            "id": "r1_5dasc_78",
+            "label-spanish": "78. Tuve la sensación de que ya no tenía voluntad propia.",
+            "label-english": "I had the feeling that I no longer had my own will."
+        },
+        {
+            "id": "r1_5dasc_79",
+            "label-spanish": "79. Tuve miedo de perder el control sobre mí mismo.",
+            "label-english": "I was afraid of losing control over myself."
+        },
+        {
+            "id": "r1_5dasc_80",
+            "label-spanish": "80. Me quedé congelado en una posición muy poco natural durante un período prolongado de tiempo.",
+            "label-english": "I stayed frozen in an very unnatural position for an extended period of time."
+        },
+        {
+            "id": "r1_5dasc_81",
+            "label-spanish": "81. Experimenté una sensación de asombro",
+            "label-english": "I experienced a kind of awe."
+        },
+        {
+            "id": "r1_5dasc_82",
+            "label-spanish": "82. Mi imaginación era extremadamente vívida.",
+            "label-english": "My imagination was extremely vivid."
+        },
+        {
+            "id": "r1_5dasc_83",
+            "label-spanish": "83. Las cosas a mi alrededor parecían más pequeñas o más grandes.",
+            "label-english": "Things in my surroundings appeared smaller or larger."
+        },
+        {
+            "id": "r1_5dasc_84",
+            "label-spanish": "84. Me sentí agotado.",
+            "label-english": "I felt exhausted."
+        },
+        {
+            "id": "r1_5dasc_85",
+            "label-spanish": "85. El tiempo pasó lentamente, de una manera atormentadora.",
+            "label-english": "Time passed slowly in a tormenting way."
+        },
+        {
+            "id": "r1_5dasc_86",
+            "label-spanish": "86. Experimenté una profunda paz interior.",
+            "label-english": "I experienced profound inner peace."
+        },
+        {
+            "id": "r1_5dasc_87",
+            "label-spanish": "87. Todo a mi alrededor parecía estar animado y lleno de vida.",
+            "label-english": "Everything around me seemed to be animated with life."
+        },
+        {
+            "id": "r1_5dasc_88",
+            "label-spanish": "88. Todo sucedió tan rápido que no pude seguirlo todo.",
+            "label-english": "Everything happened so fast that I could not follow it all."
+        },
+        {
+            "id": "r1_5dasc_89",
+            "label-spanish": "89. Tenía la sensación de que algo terrible iba a pasar.",
+            "label-english": "I had the feeling that something terrible was going to happen."
+        },
+        {
+            "id": "r1_5dasc_90",
+            "label-spanish": "90. Pude recordar ciertos eventos con una claridad superior.",
+            "label-english": "I was able to remember certain events with exceeding clarity."
+        },
+        {
+            "id": "r1_5dasc_91",
+            "label-spanish": "91. Experimenté un amor que todo lo abarca.",
+            "label-english": "I experienced an all-embracing love."
+        },
+        {
+            "id": "r1_5dasc_92",
+            "label-spanish": "92. Había sonidos en la habitación que creo que era poco probable que fueran reales.",
+            "label-english": "There were sounds in the room that I feel were unlikely to have been real."
+        },
+        {
+            "id": "r1_5dasc_93",
+            "label-spanish": "93. Escuché un tictac, golpes, timbres o traqueteos sin poder reconocer la causa.",
+            "label-english": "I heard a ticking, knocking, ringing, or rattling without being able to recognize the cause."
+        },
+        {
+            "id": "r1_5dasc_94",
+            "label-spanish": "94. Mi experiencia tuvo aspectos religiosos.",
+            "label-english": "My experience had religious aspects to it."
+        }
+    ]
+}
