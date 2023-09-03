@@ -16,14 +16,11 @@ export function Consent({ updateState }: RoundProps) {
 
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        if (currentUser == null) {
-            console.log("WHY DO YOU HATE ME");
-        }
         try {
             if (userDataRef == null && currentUser != null) {
                 setUserDataRef(doc(db, 'users', currentUser.uid));
-                updateState();
             }
+            updateState();
         } catch (error:any) {
             console.log('Error en Consentimiento', error.message);
         }
