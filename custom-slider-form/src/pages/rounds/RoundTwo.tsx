@@ -17,6 +17,7 @@ export function RoundTwo({ updateState }: RoundProps) {
 
     const [ formData, setFormData ] = useState(INITIAL_DATA_R2);
     const { currentUser, userDataRef, setUserDataRef } = useContext(AuthContext);
+    const [ disableButton, setDisableButton ] = useState(false);
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
@@ -28,11 +29,13 @@ export function RoundTwo({ updateState }: RoundProps) {
 
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault()
+        setDisableButton(true);
         try {
             if (userDataRef == null && currentUser != null) {
                 setUserDataRef(doc(db, 'users', currentUser.uid));
             }
             if (userDataRef != null) {
+                console.log("updating doc round2");
                 updateForm2(userDataRef, formData);
                 updateState();
             }
@@ -60,7 +63,7 @@ export function RoundTwo({ updateState }: RoundProps) {
                 })
             }
             <div className='button-wrapper mt-3'>
-                <button className='btn btn-primary' type='submit'>Siguiente</button>
+                <button className='btn btn-primary' type='submit' disabled={disableButton}>{ disableButton ? 'Guardando...':'Siguiente' }</button>
             </div>
             </form>
         </>

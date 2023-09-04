@@ -20,7 +20,7 @@ export function Start({ updateState }: RoundProps) {
 
     const [ formData, setFormData ] = useState(defaultFormFields);
     const { currentUser, userDataRef, setUserDataRef } = useContext(AuthContext);
-
+    const [ disableButton, setDisableButton ] = useState(false);
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
@@ -42,13 +42,14 @@ export function Start({ updateState }: RoundProps) {
 
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+        setDisableButton(true);
         try {
             if (userDataRef == null && currentUser != null) {
                 console.log("userdataref is null");
                 setUserDataRef(doc(db, 'users', currentUser.uid));
             }
             if (userDataRef != null) {
-                console.log("updating doc");
+                console.log("updating doc start");
                 updateDoc(userDataRef, formData).finally(updateState);
             }
         } catch (error:any) {
@@ -125,7 +126,7 @@ export function Start({ updateState }: RoundProps) {
                         </div>
                     </div>
                     <div className='button-wrapper mt-4 mb-2'>
-                        <button className='btn btn-primary' type='submit'>Continuar</button>
+                        <button className='btn btn-primary' type='submit' disabled={disableButton}>{ disableButton ? 'Guardando...':'Siguiente' }</button>
                     </div>
                 </form>
             }

@@ -17,7 +17,8 @@ export function RoundOne({ updateState }: RoundProps) {
     
     const [ formData, setFormData ] = useState(INITIAL_DATA_R1);
     const { currentUser, userDataRef, setUserDataRef } = useContext(AuthContext);
-    const [currentRound, setCurrentRound] = useState(1);
+    const [ currentRound, setCurrentRound ] = useState(1);
+    const [ disableButton, setDisableButton ] = useState(false);
 
     const totalRounds = 3;
 
@@ -35,11 +36,13 @@ export function RoundOne({ updateState }: RoundProps) {
             setCurrentRound(currentRound + 1); // move to the next round
             window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         } else {
+            setDisableButton(true);
             try {
                 if (userDataRef == null && currentUser != null) {
                     setUserDataRef(doc(db, 'users', currentUser.uid));
                 }
                 if (userDataRef != null) {
+                    console.log("updating doc round1");
                     updateForm1(userDataRef, formData);
                     updateState();
                 }
@@ -69,16 +72,16 @@ export function RoundOne({ updateState }: RoundProps) {
             <span className='description mb-4 row'>Ahora vamos a hacerte algunas preguntas sobre esa experiencia en particular.</span>
         </div>
         <form onSubmit={handleSubmit}>
-        {
-            getCurrentRoundQuestions().map(question => {
-                return (
-                    question['label-spanish'].length > 0 ? <Slider key={question['id']} id={question['id']} prompt={question['label-spanish']} translation={question['label-english']} value={formData[question['id'] as keyof typeof formData]} lowerBound={Round1Questions['lower-bound']} higherBound={Round1Questions['higher-bound']} round={1} updateFields={handleInputChange} /> : <></>
-                )
-            })
-        }
-        <div className='button-wrapper mt-3'>
-            <button className='btn btn-primary' type='submit'>Siguiente</button>
-        </div>
+            {
+                getCurrentRoundQuestions().map(question => {
+                    return (
+                        question['label-spanish'].length > 0 ? <Slider key={question['id']} id={question['id']} prompt={question['label-spanish']} translation={question['label-english']} value={formData[question['id'] as keyof typeof formData]} lowerBound={Round1Questions['lower-bound']} higherBound={Round1Questions['higher-bound']} round={1} updateFields={handleInputChange} /> : <></>
+                    )
+                })
+            }
+            <div className='button-wrapper mt-3'>
+                <button className='btn btn-primary' type='submit' disabled={disableButton}>{ disableButton ? 'Guardando...':'Siguiente' }</button>
+            </div>
         </form>
         </>
     )

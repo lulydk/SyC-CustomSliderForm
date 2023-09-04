@@ -1,8 +1,8 @@
-import { FormEvent, useContext } from 'react';
-import '.././App.css'
+import { FormEvent, useContext, useState } from 'react';
 import { AuthContext } from '../context/authContext';
 import { doc } from 'firebase/firestore';
 import { db } from '../firebase/firebase';
+import '.././App.css'
 
 type UpdateStateType = () => void;
 
@@ -13,9 +13,11 @@ interface RoundProps {
 export function Consent({ updateState }: RoundProps) {    
 
     const { currentUser, userDataRef, setUserDataRef } = useContext(AuthContext);
+    const [ disableButton, setDisableButton ] = useState(false);
 
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+        setDisableButton(true);
         try {
             if (userDataRef == null && currentUser != null) {
                 setUserDataRef(doc(db, 'users', currentUser.uid));
@@ -41,7 +43,7 @@ export function Consent({ updateState }: RoundProps) {
                 <b>¿Aceptás participar de este estudio?</b> De ser así, presioná "Aceptar" para comenzar con el experimento.
             </p>
             <div className='button-wrapper mt-3'>
-                <button className='btn btn-primary' type='submit'>Aceptar</button>
+                <button className='btn btn-primary' type='submit' disabled={disableButton}>{ disableButton ? 'Guardando...':'Aceptar' }</button>
             </div>
         </form>
     </>

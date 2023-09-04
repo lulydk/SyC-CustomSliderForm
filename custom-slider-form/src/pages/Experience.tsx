@@ -18,7 +18,7 @@ export function Experience({ updateState }: RoundProps) {
 
     const [ formData, setFormData ] = useState(defaultFormFields);
     const { currentUser, userDataRef, setUserDataRef } = useContext(AuthContext);
-
+    const [ disableButton, setDisableButton ] = useState(false);
 
     const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
         const { name, value } = e.target;
@@ -29,7 +29,8 @@ export function Experience({ updateState }: RoundProps) {
     };
 
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-        event.preventDefault()
+        event.preventDefault();
+        setDisableButton(true);
         if (formData.experience.length > 0) {
             try {
                 if (userDataRef == null && currentUser != null) {
@@ -61,7 +62,7 @@ export function Experience({ updateState }: RoundProps) {
                     <textarea required rows={3} name='experience' className="form-control" placeholder="Escribe tu experiencia aquí..." onChange={handleInputChange}/>
                 </div>
                 <div className='button-wrapper mt-4 mb-2'>
-                    <button className='btn btn-primary' type='submit'>Continuar</button>
+                    <button className='btn btn-primary' type='submit' disabled={disableButton}>{ disableButton ? 'Guardando...':'Siguiente' }</button>
                 </div>
             </form>
             }
