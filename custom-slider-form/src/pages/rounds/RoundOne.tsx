@@ -1,9 +1,9 @@
 import Round1Questions from '../../data/round1.json'
 import { Slider } from '../../components/form/slider/Slider'
 import { FormEvent, useContext, useEffect, useState } from "react";
-import { doc } from "firebase/firestore";
+import { DocumentData, doc, getDoc } from "firebase/firestore";
 import { db } from "../../firebase/firebase";
-import { updateForm1, INITIAL_DATA_R1, FormDataFields } from "./FormDataFields";
+import { updateForm1, INITIAL_DATA_R1, FormDataFields, FormDataFieldsR1 } from "./FormDataFields";
 import { AuthContext } from '../../context/authContext';
 import './Rounds.css'
 
@@ -26,7 +26,7 @@ export function RoundOne({ updateState }: RoundProps) {
         const { name, value } = e.target;
         setFormData((prevFormData) => ({
           ...prevFormData,
-          [name]: value,
+          [name]: Number(value),
         }));
     };
 
@@ -63,7 +63,31 @@ export function RoundOne({ updateState }: RoundProps) {
           default:
             return [];
         }
-      };
+    };
+
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         if (currentUser) {
+    //             if (userDataRef == null) {
+    //                 setUserDataRef(doc(db, 'users', currentUser.uid));
+    //             }
+    //             if (userDataRef != null) {
+    //                 const docSnap = await getDoc(userDataRef);
+    //                 let firestoreData : DocumentData = docSnap.data() as DocumentData;
+    //                 Object.keys(formData).forEach((key) => {
+    //                     if (firestoreData.includes(key)) {
+    //                         const value = firestoreData[key];
+    //                         setFormData((prevFormData) => ({
+    //                             ...prevFormData,
+    //                             [key]: value,
+    //                         }));
+    //                     }
+    //                 });
+    //             }
+    //         }
+    //     }
+    //     fetchData().catch(console.error);
+    // }, [currentUser])
     
     return (
     <>

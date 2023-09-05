@@ -1,9 +1,9 @@
 import Round3Questions from '../../data/round3.json'
 import { Radios } from '../../components/form/radios/Radios'
 import { FormEvent, useContext, useEffect, useState } from "react";
-import { doc } from "firebase/firestore";
+import { DocumentData, doc, getDoc } from "firebase/firestore";
 import { db } from "../../firebase/firebase";
-import { updateForm3, INITIAL_DATA_R3, FormDataFields } from "./FormDataFields";
+import { updateForm3, INITIAL_DATA_R3, FormDataFields, FormDataFieldsR3 } from "./FormDataFields";
 import { AuthContext } from '../../context/authContext';
 import './Rounds.css'
 
@@ -43,6 +43,30 @@ export function RoundThree({ updateState }: RoundProps) {
             console.log('Error en paso 3', error.message);
         }
     };
+
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         if (currentUser) {
+    //             if (userDataRef == null) {
+    //                 setUserDataRef(doc(db, 'users', currentUser.uid));
+    //             }
+    //             if (userDataRef != null) {
+    //                 const docSnap = await getDoc(userDataRef);
+    //                 let firestoreData : DocumentData = docSnap.data() as DocumentData;
+    //                 Object.keys(formData).forEach((key) => {
+    //                     if (firestoreData.includes(key)) {
+    //                         const value = firestoreData[key];
+    //                         setFormData((prevFormData) => ({
+    //                             ...prevFormData,
+    //                             [key]: value,
+    //                         }));
+    //                     }
+    //                 });
+    //             }
+    //         }
+    //     }
+    //     fetchData().catch(console.error);
+    // }, [currentUser])
 
     return (
         <>

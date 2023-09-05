@@ -1,9 +1,9 @@
 import Round2Questions from '../../data/round2.json'
 import { Slider } from '../../components/form/slider/Slider'
 import { FormEvent, useContext, useEffect, useState } from "react";
-import { doc } from "firebase/firestore";
+import { DocumentData, doc, getDoc } from "firebase/firestore";
 import { db } from "../../firebase/firebase";
-import { updateForm2, INITIAL_DATA_R2, FormDataFields } from "./FormDataFields";
+import { updateForm2, INITIAL_DATA_R2, FormDataFields, FormDataFieldsR2 } from "./FormDataFields";
 import { AuthContext } from '../../context/authContext';
 import './Rounds.css'
 
@@ -43,6 +43,30 @@ export function RoundTwo({ updateState }: RoundProps) {
             console.log('Error en paso 2', error.message);
         }
     };
+
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         if (currentUser) {
+    //             if (userDataRef == null) {
+    //                 setUserDataRef(doc(db, 'users', currentUser.uid));
+    //             }
+    //             if (userDataRef != null) {
+    //                 const docSnap = await getDoc(userDataRef);
+    //                 let firestoreData : DocumentData = docSnap.data() as DocumentData;
+    //                 Object.keys(formData).forEach((key) => {
+    //                     if (firestoreData.includes(key)) {
+    //                         const value = firestoreData[key];
+    //                         setFormData((prevFormData) => ({
+    //                             ...prevFormData,
+    //                             [key]: value,
+    //                         }));
+    //                     }
+    //                 });
+    //             }
+    //         }
+    //     }
+    //     fetchData().catch(console.error);
+    // }, [currentUser])
 
     return (
         <>

@@ -30,15 +30,15 @@ export function Start({ updateState }: RoundProps) {
         }));
     };
 
-    const [selectedOption, setSelectedOption] = useState('');
+    // const [selectedOption, setSelectedOption] = useState('');
     
-    const handleOptionChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setSelectedOption(e.target.value);
-        setFormData((prevFormData) => ({
-            ...prevFormData,
-            ['gender']: selectedOption,
-          }));
-    }
+    // const handleOptionChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    //     setSelectedOption(e.target.value);
+    //     setFormData((prevFormData) => ({
+    //         ...prevFormData,
+    //         ['gender']: selectedOption,
+    //       }));
+    // }
 
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -112,15 +112,15 @@ export function Start({ updateState }: RoundProps) {
                         <label className="form-label">Género</label>
                         <div className="form-wrapper">
                             <div className="form-check">
-                                <input required className="form-check-input" type="radio" name="gender" id="F" value="F" onChange={handleOptionChange} />
+                                <input required className="form-check-input" type="radio" name="gender" id="F" value="F" onChange={handleInputChange} />
                                 <label className="form-check-label">Femenino</label>
                             </div>
                             <div className="form-check">
-                                <input required className="form-check-input" type="radio" name="gender" id="M" value="M" onChange={handleOptionChange} />
+                                <input required className="form-check-input" type="radio" name="gender" id="M" value="M" onChange={handleInputChange} />
                                 <label className="form-check-label">Masculino</label>
                             </div>
                             <div className="form-check">
-                                <input required className="form-check-input" type="radio" name="gender" id="O" value="O" onChange={handleOptionChange} />
+                                <input required className="form-check-input" type="radio" name="gender" id="O" value="O" onChange={handleInputChange} />
                                 <label className="form-check-label">Otro</label>
                             </div>
                         </div>
