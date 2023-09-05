@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "dream-and-consciousness",
     "public": "dist",
     "ignore": [
       "firebase.json",
